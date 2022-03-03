@@ -6,4 +6,5 @@ At the moment, this repo contains HTML slides for the phonetics workshop at the 
 ## Acknowledgements
 
 Contributors: Matthew Faytak, Kathryn Franich
+
 Conference organizers: Pius W. Akumbu, Roland Kiessling
