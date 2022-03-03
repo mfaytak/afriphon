@@ -1,0 +1,10 @@
+*.swp
+*.swo
+.DS_Store*
+.DS_Store
+**/.DS_Store
+**/.DS_Store*
+._*
+**/._*
+.Spotlight*
+.Trashes
