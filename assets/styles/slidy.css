@@ -353,11 +353,12 @@ embed, div.figure {
 button {
   border: none;
   background-color: inherit;
+  font-family: inherit;
   color: #000080;
-  padding: 10px 10px;
+  padding: 10px 0px;
   text-align: left;
   display: inline-block;
-  font-size: 90%;
+  font-size: 100%;
   margin: 4px 2px;
   cursor: pointer;
 }

@@ -4,7 +4,9 @@
   Matthew Faytak<br/>
   Katie Franich
 
-## Overview, part 1
+## Overview
+
+Part 1:
 
 * Assumptions
 * Why (instrumental) phonetics?
@@ -12,14 +14,27 @@
 	* Using Praat
 	* Types of measurements
 
-## Overview, part 2
-
-After our break:
+Part 2:
 
 * Articulatory data
 * Data management
 * Using the data
 * Open discussion period
+
+## About the slides
+
+These slides are a **web page**
+
+* Use right, left arrow keys to navigate (or click to advance)
+* Press "A" to see all slides at once, and "A" again to go back to slide view
+* Links are formatted like <a href="https://www.youtube.com/watch?v=eVaUDAqrpKk">this</a>
+* References look like <span class="cite">This (1985)</span>
+* All references have links provided in the bibliography
+
+The slides are hosted <a href="https://github.com/mfaytak/afriphon">here</a> on GitHub
+
+* Along with all associated media
+* This slideshow's URL is <a href="https://mfaytak.github.io/afriphon/btd-1.html">mfaytak.github.io/afriphon/btd-1.html</a>
 
 
 # Some assumptions
@@ -34,67 +49,81 @@ We presume that you are:
 	* Institutional support is low
 * Familiar with phonetics in theory, but not necessarily in practice
 
+If you are not in this group, we ask that you **prioritize** those in this group for questions and feedback
+
 
 ## All of us
 
 Let's assume that we are all committed to:
 
-* Improving empirical coverage of African languages' sound structures
-* Building speech data resources for African languages
+* Improving empirical **coverage** of African languages' sound structures
+* Building speech data **resources** for African languages
 	* Ethos: "some data is better than no data"
-	* Important for future technical development
-* Developing capacity for an African phonetics practice
+	* Important as starting point for technical development
+* Developing **capacity** for an African phonetics practice
 * Doing these in a way which is adapted to local needs and demands
 
 
-# Why do phonetics?
+# Why phonetics?
 
 ## Definitions
 
-Instrumental, not relying on impression and transcription of speech sounds
+This workshop is an introduction to **instrumental** phonetics
 
-Rather than in the sense of "non-contrastive detail"
+* Relying on instrumental readouts for analysis
+* Not exclusively **impressionistic**: using the ear and transcribing speech sounds
 
-* Phonetics may be concerned with *the specific way* a contrast is produced
+"Phonetic" work may also refer to non-contrastive **subphonemic detail**
+
+* *The specific way* a phonemic contrast is produced
+* This is also important here, but we are focusing on instrumental methods
 
 
 ## Why instrumental phonetics?
 
-* Precision
-* Neutrality
-* Community use
+Several practical advantages over impressionistic approaches
 
-
-## Instrumental methods as complement
-
-The aim is not to *displace* impression-based methods, but to *complement* them
-
-
-## Precision
-
-Not all phonological contrasts can be easily described by the analyst's ear
-
-* Fine vowel contrasts
-* Subtle details in tone
+* **Neutrality** in the face of analytical and perceptual bias
+* **Precision** and reliability in detecting  contrasts
+* **Community use** of the created data
 
 
 ## Neutrality
 
-Phonological description filters all presentation of data through the worker's analysis
+In impressionistic phonological description, all presentation of data is filtered through the worker's theoretical analysis 
 
-"Analyzing the analysts" - Hyman
+* For example: autosegmental representations often make transcriptions more abstract <span class="cite">Hyman (2014):545</span>
+
+<img src="./assets/media/hyman-theory.png" width="700">
+
+Phonetic recordings allow better testing of hypotheses about phonological structure
+
+* Recordings do not intrinsically involve an analysis, and can be reanalyzed at a later date
+* Transcribed data (being analyzed) is much harder to use for this purpose
 
 
-* Instrumental phonetic data provide material for testing hypotheses about phonological structure
+## Neutrality
+
+Even a trained phonetic ear is prone to making occasional mistakes based on **perceptual bias**
+
+* For example: nasal consonant codas are more often misidentified after non-low vowels <span class="cite">Zee (1981)</span>
+
+<img src="./assets/media/zee.png" width="600">
+
+* Transcription mistakes permanently enter the record
 
 
-## Example of relevance
+## Precision
 
-Small mémoire/MA thesis type example: how would this be useful in the things students have to write
+Not all contrasts can be easily described by the analyst's ear, especially in the moment 
 
-* Prenasalized consonants? /N/ + /C/, or unit /NC/?
-* Durational measures for N and C let us test hypotheses about phonological structure
-* f0 (pitch) measures may help us determine whether N is a tone-bearing unit
+* Fine vowel contrasts (especially central vowels)
+* Diphthongs versus consonant secondary articulation
+* Prenasalization versus N+C clusters
+* Subtle differences in tone level and contour
+* Multiple downsteps/upsteps
+
+Recordings allow for careful listening later
 
 
 ## Community use
@@ -107,116 +136,157 @@ Recordings are required for instrumental phonetic work: many incidental benefits
 * Community of scientific researchers may access the data
 	* New analyses
 	* Comparative work
+* Analysis may be replicated
 
 
-# Acoustic data
+## Complementary methods
+
+The aim is not to *displace* impression-based methods, but to *complement* them
+
+* Transcription will always be needed at some level
+* Our point is that it should not be *exclusively* relied on as the analytical object
+* Whenever possible, transcriptions ought to be supplemented with recordings, visualizations of recordings, or instrumental measures as evidence
+* Instrumental measures as "second opinion" for analysis
+
+
+# Recording acoustic data
 
 ## Desired qualities
 
 We always want acoustic speech data to be:
 
-* Sufficiently loud against background noise
-* Low in background noise
-* Free of echo
+* Low in background **noise**
+* Sufficiently **loud** against background noise, but not too loud
+* Free of **echo**
+
+Certain details of format are also important: 
+
+* Record using a high **sampling rate**, at least 22.1 kHz
+* Save in **non-compressed** format (such as **.WAV**; avoid .MP3)
 
 
 ## Good recording
 
-example of good recording
+<audio id="good" src="./assets/media/best-quality.wav"></audio>
 
-* Speaker's voice is much louder than background
-* Speakers voice is not *too* loud
-* Background is free of avoidable noises
-* Relatively little echo
+Here is an example of a good recording
+
+* <button onclick="document.getElementById('good').play()">"La plume de ma tante"</button>
+* Speaker's voice is much louder than background, but is not *too* loud
+* Background is free of avoidable noise
+* Practically no echo
+
+The following slides contain recordings which fail on one of the points above
 
 
-## Poor recording
+## Too noisy
 
-examples of bad recordings
+Recordings should not contain excessive background noise 
 
-* Lots of noise (i.e. rain, or goats, or children)
+<audio id="noise2" src="./assets/media/noisy2.wav"></audio>
+<audio id="scuff" src="./assets/media/scuffing.wav"></audio>
 
-## Poor recording
+* <button onclick="document.getElementById('noise2').play()">Continuous noise</button> from a fan
+* <button onclick="document.getElementById('scuff').play()">Intermittent noise</button> from touching the microphone
 
-* Extreme amounts of echo
+Any noise, however quiet to your ears in the moment, will be much louder in the recording later
 
-## Poor recording
 
-* Speaker is *too* loud (clipping)
-* But otherwise good
+## How to improve
 
-## Required equipment
+Listen carefully to your surroundings, and avoid:
 
-Not much! Something to make recordings on. All of the following work fine
+* Rain on the roof (especially metal roofs)
+* Appliances (refrigerators, any motors or fans)
+* Busy roads (trucks, taxis)
+* Chickens, goats, children, etc.
 
-* Computer 
+Speaker should also minimize non-speech noise:
+
+* Touching or scratching  microphone, or contacting shirt collar
+* Producing background noises when emphatic (striking chest or table, clapping hands)
+* Phone ringing or vibrating
+
+
+## Too much echo
+
+<audio id="echo1" src="./assets/media/echo1.wav"></audio>
+<audio id="echo2" src="./assets/media/echo2.wav"></audio>
+
+If echo is strong, speech ends up overlapping itself; problem for listening and analysis later
+
+* <button onclick="document.getElementById('echo1').play()">Slight echo</button> (in tiled hallway)
+* <button onclick="document.getElementById('echo2').play()">More echo</button>(in concrete stairwell)
+
+How to improve: listen for echo and choose surroundings which have less
+
+* "Soft" rooms reduce echo (couches, carpets, pillows, hanging clothes); tile, stone, and cement produce echo
+* Record in the back seat of a car (motor off) if available
+* Record outside if no suitable room exists
+
+
+## Too loud (clipped)
+
+<audio id="clip" src="./assets/media/clipping.wav"></audio>
+<audio id="pop" src="./assets/media/popping.wav"></audio>
+
+If the speaker is too loud and/or too close to the microphone, the device cannot respond enough; **clipping** results
+
+* <button onclick="document.getElementById('clip').play()">Clipping of whole utterance</button>
+* This can also happen for <button onclick="document.getElementById('pop').play()"> stops and fricatives only</button>, where the releases "pop" in the microphone
+
+
+How to improve: make test recordings after you position your microphones
+
+* If there is general clipping, microphone needs to be further away or speaker needs to be quieter
+* If stops "pop", position microphone to the side of the mouth
+* **Gain** can often be adjusted if you are using a recorder
+
+
+## Equipment
+
+Not much equipment required: something to make recordings on
+
+* Laptop computer 
 * Smartphone with recording app
+	* "Awesome Voice Recorder X" (free with ads) is a good app
+	* Others must definitely exist
 * Hand recorder/memo recorder
+* Professional recorder (Zoom H4N, etc)
 
 A way of transferring files off of the device and storing for future analysis:
 
 * SD card
 * USB drive or external drive
 
+Headphones, to check recording quality
 
-## Optional equipment
+
+## Equipment
 
 External microphones can increase the quality of acoustic data by recording less echo and background noise
 
-* Look for **cardioid** or **unidirectional** microphones for recording single speakers
+* Look for **cardioid** or **unidirectional** in the description if you are recording single speakers
 * Recording public events may require an **omnidirectional** microphone
 
-An acoustic baffle reduces echo
+An acoustic baffle can reduce echo
 
 * Soft, fluffy objects: blankets, sofas, etc.
+* This can also be achieved by selecting the recording setting carefully, and using a cardioid microphone
 
-A computer to show written materials on for production, if useful
+## Other tips
 
-## Good practices
+Do not use computer noise reduction/filtering in general
 
-Check levels before recording
+* Go into your computer's sound settings and *turn this off*; make sure apps (i.e. Zoom) don't have separate filters
+* Normal to hear slight "fuzz" in background, or very slight echo
 
-* Make a test recording 
-* See if there is clipping 
-* or if the speaker is too quiet
+Recording over **Zoom** works surprisingly well, if all else fails <span class="cite">Ge, Mok, & Xiong (2021); Sanker et al (2021)</span>
 
+* Some *small* effects on the recording are noted
+* Turn noise cancellation off if using to record (switch to "original sound")
+* Better still to use the speaker's phone on their end to record, and use Zoom to supervise the process
 
-## Good practices
-
-Avoid echo:
-
-* Use "soft" rooms (soft furniture, carpets, pillows, hanging clothes) to reduce echo
-* Avoid "hard" rooms (tile, stone, or cement walls and floors): these produce too much echo
-* Record outside (away from roads, animals, and crowds) if no suitable room exists
-* Record in the back seat of a car if available
-
-Snap fingers, click tongue, or clap to gauge echo (if it "comes back", it has too much echo)
-
-
-## Good practices
-
-Avoid background noise
-
-The rule of thumb is: any noise, however quiet to your ears, will be much louder in the recording
-
-* Do not record if you can hear rain on the roof
-	* Rain on metal roof will be *extremely loud* in recording
-* Stay away from appliances (fans, refrigerators, anything with a small humming motor)
-* Keep away from busy roads (loud vehicles will pass by)
-* Remove children, chickens, goats, etc. away from recording area if possible
-
-Listen carefully to your surroundings before recording
-
-
-## Good practices
-
-The speaker also plays a role in maintaining basic recording quality
-
-* Speaker should not touch, thump, or scratch at the microphone (especially if on their person)
-* Microphone should not brush against clothes (will cause loud rustling)
-* Speaker should avoid making background noises, especially when emphatic
-	* Striking their chests
-	* Striking the table
 
 # Basic Praat (tutorial)
 
@@ -426,6 +496,12 @@ Adjust ceiling, adjust number of formants
 Formants work best in an F1-F2 plot (which is not made in Praat), but formant tracks can be drawn like any other measure
 
 
-## Break
+## References {.bib}
 
+Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">PDF</a>
 
+Ge, C., Xiong, Y., & Mok, P. (2021). How reliable are phonetic data collected remotely? Comparison of recording devices and environments on acoustic measurements. In *Proc Interspeech 2021*, 1683-1687. <a href="http://ling.cuhk.edu.hk/people/peggy/GeXiongMok_Interspeech2021.pdf">PDF</a>
+
+Sanker, C., Babinski, S., Burns, R., Evans, M., Johns, J., Kim, J., Smith, S., Weber, N., & Bowern, C. (2021). (Don't) try this at home! The effects of recording devices and software on phonetic analysis. *Language*, 97(4), e360-e382. <a href="https://muse.jhu.edu/article/840967/pdf">PDF</a>
+
+Zee, E. (1981). Effect of vowel quality on perception of post–vocalic nasal consonants in noise. *Journal of Phonetics*, 9(1), 35-48. <a href="https://doi.org/10.1016/S0095-4470(19)30925-8">DOI</a>
