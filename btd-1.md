@@ -290,11 +290,19 @@ Recording over **Zoom** works surprisingly well, if all else fails <span class="
 
 # Basic Praat (tutorial)
 
-## Downloading
+## Downloading and configuring
 
-## Configuration
+Download Praat from <a href="https://fon.hum.uva.nl">fon.hum.uva.nl</a> or <a href="https://praat.org">praat.org</a>
+
+<img src="./assets/media/praat1.png" width="800">
+
+* Mac: the .dmg file contains Praat.app (which you can run immediately) and the option to install
+* If you have issues opening, see <a href="https://www.fon.hum.uva.nl/praat/download_mac.html">2. "How to Start"</a> here
+* Windows: the .zip file contains Praat.exe, which you simply double-click to run (instructions <a href="https://www.fon.hum.uva.nl/praat/download_win.html">here</a> if needed)
 
 ## Help pages
+
+Issues can often be solved using the help pages 
 
 ## A first recording
 
@@ -302,16 +310,6 @@ Let's record ourselves saying "xxx" in whichever language we would like
 
 * Instructions
 * "Save and close"
-
-## A note on recording
-
-This is not typical for phonetics research
-
-* Usually we have *many more* repetitions of the phenomenon at issue
-* We need this to ensure we can average across enough instances when we come to analysis
-	* Human speech production is inherently variable
-	* To get at the actual tendency we need to have many examples of the same thing
-* We also prefer to work with *multiple speakers* whenever possible
 
 
 ## Objects list
@@ -323,6 +321,8 @@ as .WAV (the standard format for phonetics work)
 ## Importing a sound file
 
 Pius sound files
+
+* And TextGrids
 
 
 # Understanding the data
@@ -386,7 +386,7 @@ Think of speech as consisting of *many, many* of these
 **Nasals** look somewhat like vowels, with "smudged" formants and less energy (darkness)
 
 
-# Annotation
+# Making annotations
 
 ## TextGrids
 
