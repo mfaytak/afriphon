@@ -8,10 +8,11 @@
 
 In this session:
 
-* Articulatory data
+* Beyond Praat: articulatory data
 * Data management
 * Using the data
 * Open discussion period
+
 
 # Articulatory data
 
@@ -19,7 +20,7 @@ In this session:
 
 Acoustics gives us an **indirect idea** of the movements of the articulators
 
-Sometimes, we need to look directly at the articulators
+Sometimes, though, we need to look directly at the articulators
 
 * If there are multiple explanations for acoustics
 * If the examined sounds are totally unfamiliar or especially unusual
@@ -30,13 +31,20 @@ Sometimes, we need to look directly at the articulators
 
 Movement of tongue and lips: lips are easily seen moving
 
-* example (Pius again?)
 * Mirror at 45 degree angle provides a side view
+* Provide a schematic figure
+
+
+## Examples
+
+Pius vowel photos
+
+* example (Pius again)
 
 
 ## Palatographs
 
-More complex, but provide information on tongue-palate contact
+More complex, but provide information on tongue-palate contact <span class="cite">Anderson (2008)</span>
 
 * stop and fricative place
 * certain aspects of vowel articulation
@@ -46,6 +54,13 @@ Method
 * paint tongue
 * one token involving one lingual consonant
 * open mouth, insert mirror, photograph
+
+
+## Examples
+
+Kom high vowels (which I will be talking about in my regular talk)
+
+* Kom iz vs. i
 
 
 ## Required equipment
@@ -67,9 +82,10 @@ Photography light for better image quality
 
 ## Good practice
 
-Take more photographs than you think you'll need
+Take more photographs than you think you'll need 
 
-???
+* Not all will be well-lit or at the right angle
+* ???
 
 
 # Data management
@@ -171,4 +187,18 @@ Simple plots can also be made in Excel and R
 
 ## Conclusions
 
+asdf
+
 ## Open discussion
+
+Some potential topics for discussion:
+
+* How can we build capacity for this work in the continent's universities?
+* Can existing high-quality documentary work be used as a starting point?
+* How can we valorize this work when students decide to pursue it?
+* What should be the role of linguists off the continent in developing this work? 
+
+
+## References {.bib}
+
+Anderson, V. (2008). Static palatography for language fieldwork. *Language Documentation & Conservation*, 2(1), 1-27. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/1808">Article</a>

@@ -300,7 +300,10 @@ Download Praat from <a href="https://fon.hum.uva.nl">fon.hum.uva.nl</a> or <a hr
 * If you have issues opening, see <a href="https://www.fon.hum.uva.nl/praat/download_mac.html">2. "How to Start"</a> here
 * Windows: the .zip file contains Praat.exe, which you simply double-click to run (instructions <a href="https://www.fon.hum.uva.nl/praat/download_win.html">here</a> if needed)
 
-## Help pages
+
+## Windows and manual
+
+Both the **object window** (shown below) and **picture window** appear when you open Praat (we'll ignore the picture window for now)
 
 Basic issues can often be solved using the manual
 
@@ -439,12 +442,12 @@ We may wish to provide further details in our TextGrids, but we encounter anothe
 
 ## Waveforms
 
-Sound pressure vs. time
+**Waveforms** show sound pressure (the pressure that sound waves make on the microphone) versus time
 
-* The pressure the sound waves make on the microphone
-* We expect any sound signal to *oscillate*
+* We expect any **voiced** speech signal to *oscillate* because the vocal folds open and close in a repeating pattern
+* Other **voiceless** sounds show no movement away from "zero line" and no clear oscillation
 
-Sometimes this is **periodic** (repeating pattern); other times this is **aperiodic** (no clear pattern)
+<img src="./assets/media/praat-bbk-periodicity.png" width="700">
 
 
 ## Sonority
@@ -454,64 +457,168 @@ Sounds produced with a more open mouth are *louder* and  more sonorous <span cla
 <img src="./assets/media/praat-bbk-sonority.png" width="700">
 
 
-## Interpreting waveforms
-
-Durational measures (trivially)
-
-Voicing
-
 
 ## Spectrograms
 
 We can also show the **spectrogram** for our recording
 
-* Breaks down our waveform to give us information about the **sound spectrum**
+* Breaks down our waveform to give us information about the **sound spectrum** and where its energy is (high or low frequency)
 
-Spectrograms show time vs. **frequency** vs. sound pressure (color) 
+Spectrograms are three-dimensional, and show time vs. **frequency** vs. sound pressure (color) 
 
-* The darker the region, the more energy there is
+* The darker the spectrogram (and the thicker the waveform), the more sound pressure there is
+
+<img src="./assets/media/praat-bbk-spectro0.png" width="700">
+
+* Think of it as an elevation map (Mt. Cameroon pictured)
+
+<img src="./assets/media/relief-map.png" width="400">
 
 
 ## Interpreting spectrograms
 
 **Vowels**, **semivowels**, and **approximants** have characteristic striping, horizontally and vertically
 
-* Voicing cycle is visible vertically
-* **Formants** are clearly visible horizontally
+* Voicing is visible as vertical stripes in vowels, and as a small "bar" at bottom
+* **Formants** are clear horizontal bands above the voicing bar
 
-**Fricatives** have high-frequency or low-frequency noise
-
-* Dark smudges across entire portions of spectrogram
-* The further back the fricative, the lower the frequency
-
-**Stops** show an absence of (most) energy followed by a **burst** across the whole spectrum
+<img src="./assets/media/praat-bbk-spectro1.png" width="700">
 
 
 ## Interpreting spectrograms
 
 **Nasals** look somewhat like vowels, with "smudged" formants and less energy (darkness)
 
+* Due to the opening of the velum: nasal cavity "muffles" the sound
+* Much like soft objects in a room muffle echo
 
-# Exporting data objects
+<img src="./assets/media/praat-bbk-spectro2.png" width="700">
+
+
+## Interpreting spectrograms
+
+**Fricatives** have high-frequency or low-frequency noise
+
+* Dark irregular smudges across entire areas of spectrogram
+* The further back the fricative, the lower the average frequency
+* Compare [s] and [ʒ]: [s] is further front, has higher frequency, sits higher on spectrogram
+
+<img src="./assets/media/praat-fricative1.png" width="700">
+
+<img src="./assets/media/praat-fricative2.png" width="700">
+
+
+## Interpreting spectrograms
+
+**Stops** show an absence of (most) energy followed by a **burst** across the whole spectrum
+
+<img src="./assets/media/praat-bbk-stop1.png" width="700">
+
+**Affricates** look similar, but as if they were followed by a fricative
+
+* From Babanki [kə̀dʒóm] 'Babanki' <span class="cite">Faytak & Akumbu (2021)</span>
+
+<img src="./assets/media/praat-bbk-stop2.png" width="700">
+
+
+## Prenasalized segments
+
+Prenasalized stops and affricates often have a *long nasal closure* followed by a *short oral closure* which we can see clearly in the spectrogram
+
+* Note the "smudged" energy goes away when oral closure begins in [ⁿpfʲ] below
+* From Babanki [kə̀ⁿpfʲɨ́ŋ] 'owl' <span class="cite">Faytak & Akumbu (2021)</span>
+
+<img src="./assets/media/praat-bbk-stop3.png" width="700">
+
+
+# Drawing figures
+
+## Why make figures?
+
+Figures are an easy way to present a small amount of phonetic data in scientific papers
+
+* Give support to phonological judgments
+* Support particular transcriptions
+* Provide more detail for any especially unusual sounds or sound contrasts
+
+This section: professional-looking and informative data displays
+
 
 ## Picture window
 
-Spectrograms and waveforms can be **drawn** in the picture window
+Waveforms and spectrograms can be "drawn" or "painted" (respectively) in the **picture window**
 
-## Drawing
+* This also opened when you open Praat; we'll stop ignoring it now
 
-## Painting
-
-## "Garnishing"
-
-## Drawing TextGrid annotation
-
-## Saving figures
+<img src="./assets/media/praat-picture.png" width="600">
 
 
-# Duration
+## Drawing a waveform
 
-## What is it for?
+"Draw" is for any line-based drawings, including waveforms
+
+picture of "draw" menu
+picture of option window incl "garnish"
+
+
+## Result
+
+picture of drawn waveform
+
+
+## Painting a spectrogram
+
+"Paint" is for other objects (mostly spectrograms)
+
+picture of "paint" menu
+picture of option window incl "garnish"
+
+
+## Result
+
+picture of painted spectrogram
+
+
+## Adding a TextGrid
+
+TextGrids can be drawn as well, and by default appear with an empty space above them
+
+
+## Result
+
+(this works with waveforms, too)
+
+spectrogram + textgrid figure
+
+
+## Adding details
+
+"Garnishing" automatically provides details which may not look totally right: you can add certain details yourself after adding the relevant object, "un-garnished"
+
+* X or Y axis scales and titles
+* Titles for plots
+* Font, font size, font color, etc.
+
+??? picture
+
+
+## Saving
+
+As with everything else in Praat, you must **save** before closing the picture window or you will lose your work
+
+menu of save options
+
+
+# Measuring phonetic properties
+
+## Why
+
+More than showing the entire sound file as a waveform or spectrogram, referring to specific phonetic properties can be useful
+
+* ... 
+
+
+## Duration
 
 Duration of segments, subsegments; timing of tones
 
@@ -528,9 +635,7 @@ Get times; log as tabular data (t1, t2, dur)
 Pius data?
 
 
-# Pitch and intensity
-
-## What are they for?
+## Pitch and intensity
 
 f0 signals pitch (tone) - all sorts of phenomena
 
@@ -550,16 +655,14 @@ Pius examples
 * Change defaults to 70-140 Hz to reflect speaker's pitch range
 
 
-## Drawing figures
+## f0 and intensity figures
 
 f0 and intensity tracks can be added to figures
 
-* Suggest not overlapping, but rather putting above/below
-* Annotation with TextGrids like before
+* Best to put above/below a spectrogram or waveform
 
-# Formants
 
-## What are they for?
+## Formant frequencies
 
 Formant frequencies provide **vowel quality** and other contrasts
 
@@ -579,7 +682,7 @@ Query formant listing
 
 ## Formant estimation
 
-Unlike the other measures, formant estimation often requires calibration to individuals
+Unlike the other measures, formant estimation often requires calibration to individual speakers
 
 * Speakers with low f0 need different settings compared to speakers with higher f0
 * Children (with very high f0) can be especially difficult

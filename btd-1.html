@@ -654,9 +654,11 @@ Clipping of whole utterance
 
 </ul>
 
-</div><div id="help-pages" class="slide section level2">
+</div><div id="windows-and-manual" class="slide section level2">
 
-<h1>Help pages</h1>
+<h1>Windows and manual</h1>
+
+<p>Both the <strong>object window</strong> (shown below) and <strong>picture window</strong> appear when you open Praat (we’ll ignore the picture window for now)</p>
 
 <p>Basic issues can often be solved using the manual</p>
 
@@ -874,17 +876,17 @@ Clipping of whole utterance
 
 <h1>Waveforms</h1>
 
-<p>Sound pressure vs. time</p>
+<p><strong>Waveforms</strong> show sound pressure (the pressure that sound waves make on the microphone) versus time</p>
 
 <ul>
 
-<li>The pressure the sound waves make on the microphone</li>
+<li>We expect any <strong>voiced</strong> speech signal to <em>oscillate</em> because the vocal folds open and close in a repeating pattern</li>
 
-<li>We expect any sound signal to <em>oscillate</em></li>
+<li>Other <strong>voiceless</strong> sounds show no movement away from “zero line” and no clear oscillation</li>
 
 </ul>
 
-<p>Sometimes this is <strong>periodic</strong> (repeating pattern); other times this is <strong>aperiodic</strong> (no clear pattern)</p>
+<p><img src="./assets/media/praat-bbk-periodicity.png" width="700"></p>
 
 </div><div id="sonority" class="slide section level2">
 
@@ -894,14 +896,6 @@ Clipping of whole utterance
 
 <p><img src="./assets/media/praat-bbk-sonority.png" width="700"></p>
 
-</div><div id="interpreting-waveforms" class="slide section level2">
-
-<h1>Interpreting waveforms</h1>
-
-<p>Durational measures (trivially)</p>
-
-<p>Voicing</p>
-
 </div><div id="spectrograms" class="slide section level2">
 
 <h1>Spectrograms</h1>
@@ -910,17 +904,27 @@ Clipping of whole utterance
 
 <ul>
 
-<li>Breaks down our waveform to give us information about the <strong>sound spectrum</strong></li>
+<li>Breaks down our waveform to give us information about the <strong>sound spectrum</strong> and where its energy is (high or low frequency)</li>
 
 </ul>
 
-<p>Spectrograms show time vs. <strong>frequency</strong> vs. sound pressure (color)</p>
+<p>Spectrograms are three-dimensional, and show time vs. <strong>frequency</strong> vs. sound pressure (color)</p>
 
 <ul>
 
-<li>The darker the region, the more energy there is</li>
+<li>The darker the spectrogram (and the thicker the waveform), the more sound pressure there is</li>
 
 </ul>
+
+<p><img src="./assets/media/praat-bbk-spectro0.png" width="700"></p>
+
+<ul>
+
+<li>Think of it as an elevation map (Mt. Cameroon pictured)</li>
+
+</ul>
+
+<p><img src="./assets/media/relief-map.png" width="400"></p>
 
 </div><div id="interpreting-spectrograms" class="slide section level2">
 
@@ -930,23 +934,13 @@ Clipping of whole utterance
 
 <ul>
 
-<li>Voicing cycle is visible vertically</li>
+<li>Voicing is visible as vertical stripes in vowels, and as a small “bar” at bottom</li>
 
-<li><strong>Formants</strong> are clearly visible horizontally</li>
-
-</ul>
-
-<p><strong>Fricatives</strong> have high-frequency or low-frequency noise</p>
-
-<ul>
-
-<li>Dark smudges across entire portions of spectrogram</li>
-
-<li>The further back the fricative, the lower the frequency</li>
+<li><strong>Formants</strong> are clear horizontal bands above the voicing bar</li>
 
 </ul>
 
-<p><strong>Stops</strong> show an absence of (most) energy followed by a <strong>burst</strong> across the whole spectrum</p>
+<p><img src="./assets/media/praat-bbk-spectro1.png" width="700"></p>
 
 </div><div id="interpreting-spectrograms-1" class="slide section level2">
 
@@ -954,39 +948,189 @@ Clipping of whole utterance
 
 <p><strong>Nasals</strong> look somewhat like vowels, with “smudged” formants and less energy (darkness)</p>
 
+<ul>
+
+<li>Due to the opening of the velum: nasal cavity “muffles” the sound</li>
+
+<li>Much like soft objects in a room muffle echo</li>
+
+</ul>
+
+<p><img src="./assets/media/praat-bbk-spectro2.png" width="700"></p>
+
+</div><div id="interpreting-spectrograms-2" class="slide section level2">
+
+<h1>Interpreting spectrograms</h1>
+
+<p><strong>Fricatives</strong> have high-frequency or low-frequency noise</p>
+
+<ul>
+
+<li>Dark irregular smudges across entire areas of spectrogram</li>
+
+<li>The further back the fricative, the lower the average frequency</li>
+
+<li>Compare [s] and [ʒ]: [s] is further front, has higher frequency, sits higher on spectrogram</li>
+
+</ul>
+
+<p><img src="./assets/media/praat-fricative1.png" width="700"></p>
+
+<p><img src="./assets/media/praat-fricative2.png" width="700"></p>
+
+</div><div id="interpreting-spectrograms-3" class="slide section level2">
+
+<h1>Interpreting spectrograms</h1>
+
+<p><strong>Stops</strong> show an absence of (most) energy followed by a <strong>burst</strong> across the whole spectrum</p>
+
+<p><img src="./assets/media/praat-bbk-stop1.png" width="700"></p>
+
+<p><strong>Affricates</strong> look similar, but as if they were followed by a fricative</p>
+
+<ul>
+
+<li>From Babanki [kə̀dʒóm] ‘Babanki’ <span class="cite">Faytak &amp; Akumbu (2021)</span></li>
+
+</ul>
+
+<p><img src="./assets/media/praat-bbk-stop2.png" width="700"></p>
+
+</div><div id="prenasalized-segments" class="slide section level2">
+
+<h1>Prenasalized segments</h1>
+
+<p>Prenasalized stops and affricates often have a <em>long nasal closure</em> followed by a <em>short oral closure</em> which we can see clearly in the spectrogram</p>
+
+<ul>
+
+<li>Note the “smudged” energy goes away when oral closure begins in [ⁿpfʲ] below</li>
+
+<li>From Babanki [kə̀ⁿpfʲɨ́ŋ] ‘owl’ <span class="cite">Faytak &amp; Akumbu (2021)</span></li>
+
+</ul>
+
+<p><img src="./assets/media/praat-bbk-stop3.png" width="700"></p>
+
 </div>
 
-<div id="exporting-data-objects" class="title-slide slide section level1"><h1>Exporting data objects</h1></div><div id="picture-window" class="slide section level2">
+<div id="drawing-figures" class="title-slide slide section level1"><h1>Drawing figures</h1></div><div id="why-make-figures" class="slide section level2">
+
+<h1>Why make figures?</h1>
+
+<p>Figures are an easy way to present a small amount of phonetic data in scientific papers</p>
+
+<ul>
+
+<li>Give support to phonological judgments</li>
+
+<li>Support particular transcriptions</li>
+
+<li>Provide more detail for any especially unusual sounds or sound contrasts</li>
+
+</ul>
+
+<p>This section: professional-looking and informative data displays</p>
+
+</div><div id="picture-window" class="slide section level2">
 
 <h1>Picture window</h1>
 
-<p>Spectrograms and waveforms can be <strong>drawn</strong> in the picture window</p>
+<p>Waveforms and spectrograms can be “drawn” or “painted” (respectively) in the <strong>picture window</strong></p>
 
-</div><div id="drawing" class="slide section level2">
+<ul>
 
-<h1>Drawing</h1>
+<li>This also opened when you open Praat; we’ll stop ignoring it now</li>
 
-</div><div id="painting" class="slide section level2">
+</ul>
 
-<h1>Painting</h1>
+<p><img src="./assets/media/praat-picture.png" width="600"></p>
 
-</div><div id="garnishing" class="slide section level2">
+</div><div id="drawing-a-waveform" class="slide section level2">
 
-<h1>“Garnishing”</h1>
+<h1>Drawing a waveform</h1>
 
-</div><div id="drawing-textgrid-annotation" class="slide section level2">
+<p>“Draw” is for any line-based drawings, including waveforms</p>
 
-<h1>Drawing TextGrid annotation</h1>
+<p>picture of “draw” menu picture of option window incl “garnish”</p>
 
-</div><div id="saving-figures" class="slide section level2">
+</div><div id="result" class="slide section level2">
 
-<h1>Saving figures</h1>
+<h1>Result</h1>
+
+<p>picture of drawn waveform</p>
+
+</div><div id="painting-a-spectrogram" class="slide section level2">
+
+<h1>Painting a spectrogram</h1>
+
+<p>“Paint” is for other objects (mostly spectrograms)</p>
+
+<p>picture of “paint” menu picture of option window incl “garnish”</p>
+
+</div><div id="result-1" class="slide section level2">
+
+<h1>Result</h1>
+
+<p>picture of painted spectrogram</p>
+
+</div><div id="adding-a-textgrid" class="slide section level2">
+
+<h1>Adding a TextGrid</h1>
+
+<p>TextGrids can be drawn as well, and by default appear with an empty space above them</p>
+
+</div><div id="result-2" class="slide section level2">
+
+<h1>Result</h1>
+
+<p>(this works with waveforms, too)</p>
+
+<p>spectrogram + textgrid figure</p>
+
+</div><div id="adding-details" class="slide section level2">
+
+<h1>Adding details</h1>
+
+<p>“Garnishing” automatically provides details which may not look totally right: you can add certain details yourself after adding the relevant object, “un-garnished”</p>
+
+<ul>
+
+<li>X or Y axis scales and titles</li>
+
+<li>Titles for plots</li>
+
+<li>Font, font size, font color, etc.</li>
+
+</ul>
+
+<p>??? picture</p>
+
+</div><div id="saving" class="slide section level2">
+
+<h1>Saving</h1>
+
+<p>As with everything else in Praat, you must <strong>save</strong> before closing the picture window or you will lose your work</p>
+
+<p>menu of save options</p>
 
 </div>
 
-<div id="duration" class="title-slide slide section level1"><h1>Duration</h1></div><div id="what-is-it-for" class="slide section level2">
+<div id="measuring-phonetic-properties" class="title-slide slide section level1"><h1>Measuring phonetic properties</h1></div><div id="why" class="slide section level2">
 
-<h1>What is it for?</h1>
+<h1>Why</h1>
+
+<p>More than showing the entire sound file as a waveform or spectrogram, referring to specific phonetic properties can be useful</p>
+
+<ul>
+
+<li>…</li>
+
+</ul>
+
+</div><div id="duration" class="slide section level2">
+
+<h1>Duration</h1>
 
 <p>Duration of segments, subsegments; timing of tones</p>
 
@@ -1004,11 +1148,9 @@ Clipping of whole utterance
 
 <p>Pius data?</p>
 
-</div>
+</div><div id="pitch-and-intensity" class="slide section level2">
 
-<div id="pitch-and-intensity" class="title-slide slide section level1"><h1>Pitch and intensity</h1></div><div id="what-are-they-for" class="slide section level2">
-
-<h1>What are they for?</h1>
+<h1>Pitch and intensity</h1>
 
 <p>f0 signals pitch (tone) - all sorts of phenomena</p>
 
@@ -1036,25 +1178,21 @@ Clipping of whole utterance
 
 </ul>
 
-</div><div id="drawing-figures" class="slide section level2">
+</div><div id="f0-and-intensity-figures" class="slide section level2">
 
-<h1>Drawing figures</h1>
+<h1>f0 and intensity figures</h1>
 
 <p>f0 and intensity tracks can be added to figures</p>
 
 <ul>
 
-<li>Suggest not overlapping, but rather putting above/below</li>
-
-<li>Annotation with TextGrids like before</li>
+<li>Best to put above/below a spectrogram or waveform</li>
 
 </ul>
 
-</div>
+</div><div id="formant-frequencies" class="slide section level2">
 
-<div id="formants" class="title-slide slide section level1"><h1>Formants</h1></div><div id="what-are-they-for-1" class="slide section level2">
-
-<h1>What are they for?</h1>
+<h1>Formant frequencies</h1>
 
 <p>Formant frequencies provide <strong>vowel quality</strong> and other contrasts</p>
 
@@ -1082,7 +1220,7 @@ Clipping of whole utterance
 
 <h1>Formant estimation</h1>
 
-<p>Unlike the other measures, formant estimation often requires calibration to individuals</p>
+<p>Unlike the other measures, formant estimation often requires calibration to individual speakers</p>
 
 <ul>
 
