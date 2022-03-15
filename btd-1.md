@@ -302,30 +302,140 @@ Download Praat from <a href="https://fon.hum.uva.nl">fon.hum.uva.nl</a> or <a hr
 
 ## Help pages
 
-Issues can often be solved using the help pages 
+Basic issues can often be solved using the manual
 
-## A first recording
+<img src="./assets/media/praat-manual.png" width="400"> <img src="./assets/media/praat-manual-search.png" width="400">
 
-Let's record ourselves saying "xxx" in whichever language we would like
-
-* Instructions
-* "Save and close"
+* The manual is also available online <a href="https://www.fon.hum.uva.nl/praat/manual/Manual.html">here</a>
+* Other introductory guides can be found <a href="https://www.fon.hum.uva.nl/praat/manualsByOthers.html">here</a>
 
 
-## Objects list
+## First recording
+
+Let's record ourselves saying a "good day, good afternoon" greeting in whichever language you would like
+
+<img src="./assets/media/praat-record-menu.png" width="400"> <img src="./assets/media/praat-record-console.png" width="400">
+
+* Make sure you "save to list" before closing the recorder!
+
+
+## Stored sound
+
+You should now have a Sound in your **objects** window
+
+* Select the Sound object and a menu will appear to the right
+* Click "Play" to hear your sound
+
+<img src="./assets/media/praat-Sound.png" width="600">
+
 
 ## Saving your recording
 
-as .WAV (the standard format for phonetics work)
+We'll end this by saving our work as a .WAV file (the standard format for phonetics work)
+
+* The file is not yet saved, only *stored* in Praat
+* If you close Praat without saving the file, it will vanish
+
+<img src="./assets/media/praat-save-Sound.png" width="600">
+
 
 ## Importing a sound file
 
-Pius sound files
+<audio id="bush" src="./assets/media/bbk-hills-of-bushes.wav"></audio>
 
-* And TextGrids
+We might also **import** sounds which have already been recorded
+
+* Download <a href="./assets/media/bbk-files.zip">this ZIP file</a> (673 KB), which contains all of the files we'll use
+* Use the "Open" dialogue to open **bbk-hills-of-bushes.wav**
+* That file contains one utterance of Babanki <button onclick="document.getElementById('bush').play()"> [tə̀tāŋ tə́ tə́ꜜtóʔ]</button> "hills of bushes" <span class="cite">from Faytak & Akumbu (2021)</span>
+
+<img src="./assets/media/praat-import.png" width="600">
 
 
-# Understanding the data
+# Making and using TextGrids
+
+## Viewing a sound file
+
+We'll start by viewing Babanki <button onclick="document.getElementById('bush').play()"> [tə̀tāŋ tə́ tə́ꜜtóʔ]</button> "hills of bushes"
+
+* Select the Sound and click "View and Edit" in the right menu
+* Note controls (zoom in, zoom out, scroll)
+* Select by clicking, SHIFT-clicking, or clicking and dragging in sound
+* Press TAB to play, or click bar below window
+
+We lack useful landmarks at this point
+
+* Each "blob" is a syllable
+* We may wish to know where the words and segments are
+* No indication of tones (yet)
+
+<img src="./assets/media/praat-bbk-open.png" width="700">
+
+
+## Making a TextGrid
+
+**TextGrids** are one of the most useful features of Praat: annotate and organize your audio files
+
+* Using the menu as shown below, we'll make a TextGrid for our Babanki sound object
+
+<img src="./assets/media/praat-annotate.png" width="400"> <img src="./assets/media/praat-make-tg.png" width="400">
+
+
+## Interval tiers
+
+Let's use the **interval tier** "sentence" and use it to transcribe the utterance
+
+* Contains a list of ranges in time separated by boundaries
+* Useful for marking off words, utterances, and some vowels and consonants
+* Here, click before the beginning and after the end of the utterance, then type a transcription or translation in the middle
+
+<img src="./assets/media/praat-bbk-interval.png" width="700">
+
+
+## Point tiers
+
+Let's use the **point tier** "stop" to mark off where each [t] release happens
+
+* Contains a list of points in time
+* Useful for instantaneous events
+* Note that *intervals are generally more useful* for most segments
+* Can't click and highlight range like interval tier 
+
+<img src="./assets/media/praat-bbk-point.png" width="700">
+
+
+## Adding and removing tiers
+
+We might be dissatisfied with how the tone marks are displaying; we could make a new tier for tones (autosegmental style)
+
+<img src="./assets/media/praat-bbk-add.png" width="400"> <img src="./assets/media/praat-bbk-add2.png" width="300">
+
+Amending the TextGrid using the new tier:
+
+<img src="./assets/media/praat-bbk-add3.png" width="700">
+
+
+## Saving TextGrids
+
+Using CTRL+S or the menu shown below, you must *save* your TextGrid when you are done
+
+* If you close Praat without saving your TextGrid, it will vanish
+* Much like recorded audio files which are stored in the object list
+
+<img src="./assets/media/praat-tg-save.png" width="700">
+
+
+# Reading our data
+
+## Data displays
+
+We may wish to provide further details in our TextGrids, but we encounter another problem here: how to interpret the data?
+
+* Praat shows **waveforms** and **spectrograms**
+* Note the simpler TextGrid (segments, tones); **bbk-hills-of-bushes.TextGrid** in downloaded files
+
+<img src="./assets/media/praat-bbk-datatypes.png" width="700">
+
 
 ## Waveforms
 
@@ -336,7 +446,12 @@ Sound pressure vs. time
 
 Sometimes this is **periodic** (repeating pattern); other times this is **aperiodic** (no clear pattern)
 
-Sounds produced with a more open mouth are *louder* and have more sound pressure; these are *thicker* on the waveform
+
+## Sonority
+
+Sounds produced with a more open mouth are *louder* and  more sonorous <span class="cite">Parker (2008) </span>; these are *thicker* on the waveform
+
+<img src="./assets/media/praat-bbk-sonority.png" width="700">
 
 
 ## Interpreting waveforms
@@ -357,18 +472,9 @@ Spectrograms show time vs. **frequency** vs. sound pressure (color)
 * The darker the region, the more energy there is
 
 
-## Simple frequency examples
-
-A sine wave which repeats every 440 ms looks like this:
-
-If we add more sine waves it shows us this:
-
-Think of speech as consisting of *many, many* of these
-
-
 ## Interpreting spectrograms
 
-**Vowels** and **approximants** have characteristic striping, horizontally and vertically
+**Vowels**, **semivowels**, and **approximants** have characteristic striping, horizontally and vertically
 
 * Voicing cycle is visible vertically
 * **Formants** are clearly visible horizontally
@@ -386,19 +492,6 @@ Think of speech as consisting of *many, many* of these
 **Nasals** look somewhat like vowels, with "smudged" formants and less energy (darkness)
 
 
-# Making annotations
-
-## TextGrids
-
-## Interval tiers
-
-## Point tiers
-
-## Example
-
-Pius data
-
-
 # Exporting data objects
 
 ## Picture window
@@ -411,7 +504,7 @@ Spectrograms and waveforms can be **drawn** in the picture window
 
 ## "Garnishing"
 
-## Adding TextGrid annotation
+## Drawing TextGrid annotation
 
 ## Saving figures
 
@@ -451,6 +544,10 @@ intensity is useful for a range of properties (cons lenition, stress, etc)
 Turn on "show pitch"; query pitch (f0)
 
 Exactly parallel for intensity
+
+Pius examples
+
+* Change defaults to 70-140 Hz to reflect speaker's pitch range
 
 
 ## Drawing figures
@@ -498,10 +595,14 @@ Formants work best in an F1-F2 plot (which is not made in Praat), but formant tr
 
 ## References {.bib}
 
-Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">PDF</a>
+Faytak, M., & Akumbu, P. W. (2021). Kejom (Babanki). *Journal of the International Phonetic Association*, 51(2), 333-354. <a href="https://doi.org/10.1017/S0025100319000264">Article</a>
 
 Ge, C., Xiong, Y., & Mok, P. (2021). How reliable are phonetic data collected remotely? Comparison of recording devices and environments on acoustic measurements. In *Proc Interspeech 2021*, 1683-1687. <a href="http://ling.cuhk.edu.hk/people/peggy/GeXiongMok_Interspeech2021.pdf">PDF</a>
 
+Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">Article</a>
+
+Parker, S. (2008). Sound level protrusions as physical correlates of sonority. *Journal of Phonetics*, 36(1), 55-90. <a href="https://doi.org/10.1016/j.wocn.2007.09.003">Abstract</a>
+
 Sanker, C., Babinski, S., Burns, R., Evans, M., Johns, J., Kim, J., Smith, S., Weber, N., & Bowern, C. (2021). (Don't) try this at home! The effects of recording devices and software on phonetic analysis. *Language*, 97(4), e360-e382. <a href="https://muse.jhu.edu/article/840967/pdf">PDF</a>
 
-Zee, E. (1981). Effect of vowel quality on perception of post–vocalic nasal consonants in noise. *Journal of Phonetics*, 9(1), 35-48. <a href="https://doi.org/10.1016/S0095-4470(19)30925-8">DOI</a>
+Zee, E. (1981). Effect of vowel quality on perception of post–vocalic nasal consonants in noise. *Journal of Phonetics*, 9(1), 35-48. <a href="https://doi.org/10.1016/S0095-4470(19)30925-8">Abstract</a>
