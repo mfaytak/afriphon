@@ -362,17 +362,25 @@ We might also **import** sounds which have already been recorded
 We'll start by viewing Babanki <button onclick="document.getElementById('bush').play()"> [tə̀tāŋ tə́ tə́ꜜtóʔ]</button> "hills of bushes"
 
 * Select the Sound and click "View and Edit" in the right menu
-* Note controls (zoom in, zoom out, scroll)
+
+
+Viewer window has button and keyboard controls
+
 * Select by clicking, SHIFT-clicking, or clicking and dragging in sound
-* Press TAB to play, or click bar below window
-
-We lack useful landmarks at this point
-
-* Each "blob" is a syllable
-* We may wish to know where the words and segments are
-* No indication of tones (yet)
+* Press TAB to play selected sound, or click bar below window
+* Control buttons (zoom in, zoom out, scroll) are at lower left
+* Keyboard shortcuts: CTRL+ (PC) or Command+ (Mac)...
+	* A: zoom out to all
+	* N: zoom to selection
+	* I: zoom in
+	* O: zoom out
 
 <img src="./assets/media/praat-bbk-open.png" width="700">
+
+We may wish to know where the words and segments are, but we lack useful landmarks at this point
+
+* Each "blob" is a syllable
+* No indication of tones (yet)
 
 
 ## Making a TextGrid
@@ -645,31 +653,67 @@ As with everything else in Praat, you must **save** before closing the picture w
 
 # Measuring phonetic properties
 
-## Why
+## Why numerical measurements?
 
-More than showing the entire sound file as a waveform or spectrogram, referring to specific phonetic properties can be useful
+Now we'll turn to **taking numerical measurements** in Praat
 
-* ... 
+* Actual calculation
+* Displaying **figures** of these measurements
+* Storing measurements as **tabular data** (at the end)
+
+More than showing an entire sound file as a waveform or spectrogram, focusing on a specific phonetic property can be useful
+
+* Make a figure for this specific property 
+* Focus on topic of interest for your discussion
+* Display with a TextGrid, a waveform, etc.
+
+
+## Why numerical measurements?
+
+Also lets us measure many utterances and **summarize**, which also allows us to handle **phonetic variation**
+
+* Languages differ in their phonetic implementation of the "same" segments
+* Speakers of the same language produce it differently depending on their history, social stance, etc
+* Even phonologically identical words can differ slightly phonetically <span class="cite">Gahl (2008)</span>
+
+Because of this it's best to collect **many observations** and **average** or **model** the data to remove noise and variation
+
+* Multiple speakers
+* Multiple repetitions
+* Multiple words
 
 
 ## Duration
 
-Duration of segments, subsegments; timing of tones
+One of the simplest measures: **duration** of segments or words
+
+* Simply ending time of the interval minus its starting time ($t_2 - t_1$), in seconds
+* Two ways to acquire this in Praat: 
+	* Displayed in viewing window when you select an interval
+	* If you use the "Query" menu, a text box appears which you can copy-paste the value from
+
+<img src="./assets/media/praat-bbk-duration.png" width="700">
+
+
+## Practical use
+
+Duration of segments, subsegments
 
 Laryngeal contrasts (how long is aspiration of stop), gemination, vowel length, etc.
-
-
-## How to
-
-Get times; log as tabular data (t1, t2, dur)
-
-
-## Example
 
 Pius data?
 
 
-## Pitch and intensity
+## Pitch (fundamental frequency, f0)
+
+* Turn on "show pitch"; query pitch (f0)
+
+<img src="./assets/media/praat-pitch-menu.png" width="700">
+
+
+
+
+## Practical use
 
 f0 signals pitch (tone) - all sorts of phenomena
 
@@ -677,16 +721,23 @@ f0 signals pitch (tone) - all sorts of phenomena
 
 intensity is useful for a range of properties (cons lenition, stress, etc)
 
+Pius example: 
 
-## How to
+* Change defaults to 70-140 Hz to reflect speaker's pitch range
 
-Turn on "show pitch"; query pitch (f0)
+
+
+## Intensity
 
 Exactly parallel for intensity
 
+<img src="./assets/media/praat-intensity-menu.png" width="700">
+
+
+## Practical use
+
 Pius examples
 
-* Change defaults to 70-140 Hz to reflect speaker's pitch range
 
 
 ## f0 and intensity figures
@@ -694,6 +745,7 @@ Pius examples
 f0 and intensity tracks can be added to figures
 
 * Best to put above/below a spectrogram or waveform
+* Shown below: pitch contour
 
 
 ## Formant frequencies
@@ -705,6 +757,8 @@ Formant frequencies provide **vowel quality** and other contrasts
 * F3 directly relates to retroflexion, etc.
 
 Formant transitions; lateral and nasal quality, etc.
+
+<img src="./assets/media/praat-formant-menu.png" width="700">
 
 
 ## How to
@@ -729,10 +783,52 @@ Adjust ceiling, adjust number of formants
 
 Formants work best in an F1-F2 plot (which is not made in Praat), but formant tracks can be drawn like any other measure
 
+## Voicing ("Pulses")
+
+<img src="./assets/media/praat-pulse-menu.png" width="700">
+
+## Voicing report
+
+<img src="./assets/media/praat-voice-report.png" width="700">
+
+## Practical use
+
+
+
+## Tabular data
+
+The way numerical measurements are stored is important: store as **tabular data** (i.e. spreadsheets)
+
+* One observation (time point, tone, segment, etc) per row
+* One measure per column
+	* Can have multiple measures per time point
+* Name columns using the first row
+* Use more columns to provide other background information (speaker's ID, segment or word, experimental condition, etc)
+
+Can use Excel or Google Drive (.xls, .txt, or .csv format)
+
+* Manually building the tabular data in Excel is slow, but it works and requires no new skills
+* Google Sheets provides a free alternative to Excel, but data transfer might be expensive 
+* **Praat scripting** can quickly produce tabular data, but some new skills required, beyond the scope of this tutorial
+
+
+## Example
+
+* Include: Pius formant data
+
+how to paste easily? Praat adds three spaces (instead of a tab) between measurement columns, so each row is read as a single string 
+
+Google Docs can get around this:
+
+<img src="./assets/media/gdocs-split-cols.png" width="700">
+
+
 
 ## References {.bib}
 
 Faytak, M., & Akumbu, P. W. (2021). Kejom (Babanki). *Journal of the International Phonetic Association*, 51(2), 333-354. <a href="https://doi.org/10.1017/S0025100319000264">Article</a>
+
+Gahl, S. (2008). *Time* and *Thyme* Are not Homophones: The Effect of Lemma Frequency on Word Durations in Spontaneous Speech. *Language* 84(3), 474-496. <a href="https://doi.org/10.1353/lan.0.0035">Article</a>
 
 Ge, C., Xiong, Y., & Mok, P. (2021). How reliable are phonetic data collected remotely? Comparison of recording devices and environments on acoustic measurements. In *Proc Interspeech 2021*, 1683-1687. <a href="http://ling.cuhk.edu.hk/people/peggy/GeXiongMok_Interspeech2021.pdf">PDF</a>
 
