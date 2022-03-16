@@ -1042,6 +1042,8 @@ Clipping of whole utterance
 
 <li>This also opened when you open Praat; we’ll stop ignoring it now</li>
 
+<li>The blue rectangle indicates the <em>plot area</em> where the figure will be drawn: change size by clicking and dragging as needed</li>
+
 </ul>
 
 <p><img src="./assets/media/praat-picture.png" width="600"></p>
@@ -1050,61 +1052,121 @@ Clipping of whole utterance
 
 <h1>Drawing a waveform</h1>
 
-<p>“Draw” is for any line-based drawings, including waveforms</p>
+<p>“Draw” (in the object window) is for any line-based drawings, including waveforms</p>
 
-<p>picture of “draw” menu picture of option window incl “garnish”</p>
+<ul>
 
-</div><div id="result" class="slide section level2">
+<li>Select a Sound to draw its waveform</li>
 
-<h1>Result</h1>
+</ul>
 
-<p>picture of drawn waveform</p>
+<p><img src="./assets/media/praat-bbk-draw.png" width="400"> <img src="./assets/media/praat-draw-options.png" width="500"></p>
+
+<p>The result: a waveform drawn within the plot area</p>
+
+<p><img src="./assets/media/praat-drawn.png" width="600"></p>
+
+</div><div id="drawing-a-textgrid" class="slide section level2">
+
+<h1>Drawing a TextGrid</h1>
+
+<p>TextGrids can be drawn as well, using the same menu as Sounds</p>
+
+<ul>
+
+<li>By default, they appear with an empty space above them</li>
+
+</ul>
+
+<p><img src="./assets/media/praat-drawn-tg.png" width="700"></p>
+
+</div><div id="combining-textgrids-and-waveforms" class="slide section level2">
+
+<h1>Combining TextGrids and waveforms</h1>
+
+<p>A Sound and TextGrid can be drawn together very easily: simply <strong>select both</strong> and choose the Draw menu as before</p>
+
+<ul>
+
+<li>Adds TextGrid annotation to the waveform drawing</li>
+
+</ul>
+
+<p><img src="./assets/media/praat-drawn-soundtg.png" width="700"></p>
+
+</div><div id="extracting-a-spectrogram" class="slide section level2">
+
+<h1>Extracting a spectrogram</h1>
+
+<p>“Paint” is for drawing spectrograms and other objects, but: we need the right <strong>object</strong> to do this</p>
+
+<ul>
+
+<li>Select Sound and click “View and Edit”</li>
+
+<li>Select from the Spectrum menu “Extract visible spectrogram”</li>
+
+</ul>
+
+<p><img src="./assets/media/praat-extract-spec.png" width="700"></p>
 
 </div><div id="painting-a-spectrogram" class="slide section level2">
 
 <h1>Painting a spectrogram</h1>
 
-<p>“Paint” is for other objects (mostly spectrograms)</p>
+<p>This sends a Spectrogram object to the object list; when we select this we get a “Paint” option under Draw</p>
 
-<p>picture of “paint” menu picture of option window incl “garnish”</p>
+<p><img src="./assets/media/praat-bbk-paint.png" width="400"> <img src="./assets/media/praat-paint-options.png" width="500"></p>
 
-</div><div id="result-1" class="slide section level2">
+<p>The result: as expected, but a bit too tall for its width (make plot area wider/shorter)</p>
 
-<h1>Result</h1>
+<p><img src="./assets/media/praat-painted.png" width="700"></p>
 
-<p>picture of painted spectrogram</p>
+</div><div id="spectrograms-and-textgrids" class="slide section level2">
 
-</div><div id="adding-a-textgrid" class="slide section level2">
+<h1>Spectrograms and TextGrids</h1>
 
-<h1>Adding a TextGrid</h1>
+<p>Drawing a spectrogram and a TextGrid at the same time is a bit more complicated</p>
 
-<p>TextGrids can be drawn as well, and by default appear with an empty space above them</p>
+<ol style="list-style-type: decimal">
 
-</div><div id="result-2" class="slide section level2">
+<li>Paint the spectrogram, but <strong>uncheck “Garnish”</strong></li>
 
-<h1>Result</h1>
+<li>Add the Y axis marks using the “Margins” menu</li>
 
-<p>(this works with waveforms, too)</p>
+</ol>
 
-<p>spectrogram + textgrid figure</p>
+<p><img src="./assets/media/praat-marksleft.png" width="400"> <img src="./assets/media/praat-yaxis.png" width="400"></p>
 
-</div><div id="adding-details" class="slide section level2">
+<ol start="3" style="list-style-type: decimal">
 
-<h1>Adding details</h1>
+<li>Add a Y axis label, usually “Frequency (Hz)”</li>
 
-<p>“Garnishing” automatically provides details which may not look totally right: you can add certain details yourself after adding the relevant object, “un-garnished”</p>
+</ol>
 
 <ul>
 
-<li>X or Y axis scales and titles</li>
-
-<li>Titles for plots</li>
-
-<li>Font, font size, font color, etc.</li>
+<li>I’ve also added a box around the plot here with “Margins” &gt; “Draw Inner Box”</li>
 
 </ul>
 
-<p>??? picture</p>
+<p><img src="./assets/media/praat-textleft.png" width="400"> <img src="./assets/media/praat-axistext.png" width="400"></p>
+
+</div><div id="spectrograms-and-textgrids-1" class="slide section level2">
+
+<h1>Spectrograms and TextGrids</h1>
+
+<ol start="3" style="list-style-type: decimal">
+
+<li><strong>Resize</strong> plot area to be taller than spectrogram (pictured), and Draw the TextGrid</li>
+
+</ol>
+
+<p><img src="./assets/media/praat-pretg.png" width="600"></p>
+
+<p>The result: TextGrid annotations on top of the spectrogram</p>
+
+<p><img src="./assets/media/praat-painted-tg.png" width="600"></p>
 
 </div><div id="saving" class="slide section level2">
 
@@ -1112,7 +1174,13 @@ Clipping of whole utterance
 
 <p>As with everything else in Praat, you must <strong>save</strong> before closing the picture window or you will lose your work</p>
 
-<p>menu of save options</p>
+<ul>
+
+<li>If you don’t keep the plot area in the same place (covering your figure or margins), you won’t save the entire figure</li>
+
+</ul>
+
+<p><img src="./assets/media/praat-save-picture.png" width="600"></p>
 
 </div>
 

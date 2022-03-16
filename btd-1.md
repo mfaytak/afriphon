@@ -549,64 +549,98 @@ This section: professional-looking and informative data displays
 Waveforms and spectrograms can be "drawn" or "painted" (respectively) in the **picture window**
 
 * This also opened when you open Praat; we'll stop ignoring it now
+* The blue rectangle indicates the *plot area* where the figure will be drawn: change size by clicking and dragging as needed
 
 <img src="./assets/media/praat-picture.png" width="600">
 
 
 ## Drawing a waveform
 
-"Draw" is for any line-based drawings, including waveforms
+"Draw" (in the object window) is for any line-based drawings, including waveforms
 
-picture of "draw" menu
-picture of option window incl "garnish"
+* Select a Sound to draw its waveform
+
+<img src="./assets/media/praat-bbk-draw.png" width="400">
+<img src="./assets/media/praat-draw-options.png" width="500">
+
+The result: a waveform drawn within the plot area
+
+<img src="./assets/media/praat-drawn.png" width="600">
 
 
-## Result
+## Drawing a TextGrid
 
-picture of drawn waveform
+TextGrids can be drawn as well, using the same menu as Sounds
+
+* By default, they appear with an empty space above them
+
+<img src="./assets/media/praat-drawn-tg.png" width="700">
+
+
+## Combining TextGrids and waveforms
+
+A Sound and TextGrid can be drawn together very easily: simply **select both** and choose the Draw menu as before
+
+* Adds TextGrid annotation to the waveform drawing
+
+<img src="./assets/media/praat-drawn-soundtg.png" width="700">
+
+
+## Extracting a spectrogram
+
+"Paint" is for drawing spectrograms and other objects, but: we need the right **object** to do this
+
+* Select Sound and click "View and Edit"
+* Select from the Spectrum menu "Extract visible spectrogram"
+
+<img src="./assets/media/praat-extract-spec.png" width="700">
 
 
 ## Painting a spectrogram
 
-"Paint" is for other objects (mostly spectrograms)
+This sends a Spectrogram object to the object list; when we select this we get a "Paint" option under Draw
 
-picture of "paint" menu
-picture of option window incl "garnish"
+<img src="./assets/media/praat-bbk-paint.png" width="400">
+<img src="./assets/media/praat-paint-options.png" width="500">
 
+The result: as expected, but a bit too tall for its width (make plot area wider/shorter)
 
-## Result
-
-picture of painted spectrogram
-
-
-## Adding a TextGrid
-
-TextGrids can be drawn as well, and by default appear with an empty space above them
+<img src="./assets/media/praat-painted.png" width="700">
 
 
-## Result
+## Spectrograms and TextGrids
 
-(this works with waveforms, too)
+Drawing a spectrogram and a TextGrid at the same time is a bit more complicated
 
-spectrogram + textgrid figure
+1. Paint the spectrogram, but **uncheck "Garnish"**
+2. Add the Y axis marks using the "Margins" menu
+
+<img src="./assets/media/praat-marksleft.png" width="400"> <img src="./assets/media/praat-yaxis.png" width="400">
+
+3. Add a Y axis label, usually "Frequency (Hz)"
+* I've also added a box around the plot here with "Margins" > "Draw Inner Box"
+
+<img src="./assets/media/praat-textleft.png" width="400"> <img src="./assets/media/praat-axistext.png" width="400">
 
 
-## Adding details
+## Spectrograms and TextGrids
 
-"Garnishing" automatically provides details which may not look totally right: you can add certain details yourself after adding the relevant object, "un-garnished"
+3. **Resize** plot area to be  taller than spectrogram (pictured), and Draw the TextGrid
 
-* X or Y axis scales and titles
-* Titles for plots
-* Font, font size, font color, etc.
+<img src="./assets/media/praat-pretg.png" width="600">
 
-??? picture
+The result: TextGrid annotations on top of the spectrogram
+
+<img src="./assets/media/praat-painted-tg.png" width="600">
 
 
 ## Saving
 
 As with everything else in Praat, you must **save** before closing the picture window or you will lose your work
 
-menu of save options
+* If you don't keep the plot area in the same place (covering your figure or margins), you won't save the entire figure
+
+<img src="./assets/media/praat-save-picture.png" width="600">
 
 
 # Measuring phonetic properties

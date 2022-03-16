@@ -32,7 +32,9 @@ Sometimes, though, we need to look directly at the articulators
 Movement of tongue and lips: lips are easily seen moving
 
 * Mirror at 45 degree angle provides a side view
-* Provide a schematic figure
+
+<img src="./assets/media/lip-mirror.png" width="600">
+
 
 
 ## Examples
@@ -40,6 +42,8 @@ Movement of tongue and lips: lips are easily seen moving
 Pius vowel photos
 
 * example (Pius again)
+
+<img src="./assets/media/bbk-lip.png" width="800">
 
 
 ## Palatographs
@@ -55,12 +59,17 @@ Method
 * one token involving one lingual consonant
 * open mouth, insert mirror, photograph
 
+<img src="./assets/media/palatography-side.png" width="600">
+
 
 ## Examples
 
 Kom high vowels (which I will be talking about in my regular talk)
 
 * Kom iz vs. i
+* Audio examples
+
+<img src="./assets/media/kom-palatography.png" width="600">
 
 
 ## Required equipment
@@ -123,6 +132,7 @@ To identify further details you should speak them during *the recording itself*
 * Give time, date, and location of recording
 * Identify anyone else who may be heard in the recording (assistants, translators, etc.)
 
+
 ## Tabular data
 
 Structure of measures (formants, duration, f0, etc) is important
@@ -139,10 +149,10 @@ Store as **tabular data** (csv or txt)
 
 Manually building the tabular data in Excel is slow but works
 
-Praat **scripting** can more quickly produce tabular data, but this is beyond the scope of this tutorial
+**Praat scripting** can more quickly produce tabular data, but this is beyond the scope of this tutorial
 
-* Python and R are also usable for these purposes 
-* All three are available free of charge
+* Google Sheets provides a free alternative (can download as .csv)
+* Python and R are also usable for these purposes: free, but harder to learn
 
 
 # Using the data
@@ -162,6 +172,7 @@ Tabular data is more complicated: it's a lot of text/numbers
 * Provide summaries (averages, etc)
 * Provide statistical analysis 
   * This is not practical for all attendees, but if working in a collaborative publication your collaborators may be able to provide
+
 
 ## Statistics
 
@@ -185,9 +196,10 @@ Simple plots can also be made in Excel and R
 
 # Conclusions
 
-## Conclusions
+## Summary
 
-asdf
+Summary asdf
+
 
 ## Open discussion
 
