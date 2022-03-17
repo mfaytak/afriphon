@@ -695,124 +695,315 @@ One of the simplest measures: **duration** of segments or words
 <img src="./assets/media/praat-bbk-duration.png" width="700">
 
 
-## Practical use
+## Model use
 
-Duration of segments, subsegments
+Duration of segments and subsegments
 
-Laryngeal contrasts (how long is aspiration of stop), gemination, vowel length, etc.
+* Duration of closure vs. release (voice onset time)
+* Gemination and vowel length
 
-Pius data?
+An example from Babanki (**bbk-prenas.wav**): proportion of prenasalized consonants which is nasal <span class="cite">Faytak & Akumbu (2021)</span>
+
+<img src="./assets/media/praat-bbk-duration2.png" width="700">
+
+* Not uncommon for continuants to stop up when prenasalized, e.g. /ⁿz/ > [ndz]
+* But /ⁿz/ and /ⁿdz/ (etc.) are contrastive in Babanki
+* Babanki speakers produce *shorter, lighter prenasalization* before continuants
+* This may help to avoid merger of continuants and non-continuants
+
+## Model use
+
+(other papers - prosodic factors?)
 
 
 ## Pitch (fundamental frequency, f0)
 
-* Turn on "show pitch"; query pitch (f0)
+Pitch (and all other measurements we'll talk about) have a dedicated **menu** 
+
+* Turn on "show pitch" to use all other options
+* **f0 track** appears over spectrogram (below) when "showing"
 
 <img src="./assets/media/praat-pitch-menu.png" width="700">
 
+<img src="./assets/media/praat-bbk-pitch.png" width="700">
 
 
+## Pitch settings
 
-## Practical use
+**Settings** for pitch are important
 
-f0 signals pitch (tone) - all sorts of phenomena
+* If pitch range is not suited to the speaker, fake jumps in pitch can appear
+* Below, the low-falling tone has a fake jump, well above H for this speaker!
+* From our prior knowledge of the language we should **overrule** Praat
 
-* Downstep, downdrift, pitch reset, lexical tone contrasts, intonation, etc
+<img src="./assets/media/bbk-grass-beetle.png" width="700">
 
-intensity is useful for a range of properties (cons lenition, stress, etc)
 
-Pius example: 
+## Pitch settings
 
-* Change defaults to 70-140 Hz to reflect speaker's pitch range
+A quick change to pitch range fixes the jump issue 
 
+* In "Settings..." under the Pitch menu
+* The pitch range was too high for the speaker, so we lower the pitch floor
+
+<img src="./assets/media/praat-pitch-settings.png" width="700">
+
+* This handles the low tones better
+
+<img src="./assets/media/praat-bbk-fixed-pitch.png" width="700">
+
+* If jumps don't go away, the "Advanced pitch settings..." window offers some options
+
+<img src="./assets/media/praat-advanced-pitch-settings.png" width="700">
+
+
+## Model use
+
+<audio id="schwa" src="./assets/media/bbk-schwa.wav"></audio>
+
+All tonal phenomena involve f0
+
+* Lexical tone, downstep, downdrift, pitch reset, tone depression, lexical tone contrasts
+* Intonation (question formation, etc)
+
+Babanki example in <button onclick="document.getElementById('schwa').play()"> bbk-schwa.wav</button>: 
+
+* Prefixal L ( və̀-lɨ́m "males") behave differently from stem L (bə̀lâŋ "plank") when between two Hs
+	* Third word is bə́lə̀ŋ "groundnut"
+* HL(prefix)H raises to mid: HM(prefix)H <span class="cite">Akumbu (2019)</span>
+
+<img src="./assets/media/praat-bbk-mid.png" width="700">
+
+
+## Model use
+
+<audio id="aboro" src="./assets/media/Part2_5_Rialland_Embosi_fig01.wav"></audio>
+
+Sub-phonemic effects of intonation on tonemes can be examined <span class="cite">figure from Rialland & Aborobongui (2016)</span>
+
+* Boundary tones (%) indicate sentence type
+* Effect of L% on lexical H in <button onclick="document.getElementById('aboro').play()"> the example below</button>
+
+<img src="./assets/media/rialland-aborobongui.png" width="700">
+
+(other papers)
 
 
 ## Intensity
 
-Exactly parallel for intensity
+A measure of **loudness**, measured in decibels (dB)
+
+* Intensity menu and settings are exactly parallel to Pitch menu and settings
 
 <img src="./assets/media/praat-intensity-menu.png" width="700">
 
+* The yellow intensity track can be hard to spot
+* Higher parts of track match darker parts of spectrogram and thicker parts of waveform
 
-## Practical use
+<img src="./assets/media/praat-bbk-intensity.png" width="700">
 
-Pius examples
 
+## Model use
+
+Intensity is useful for measuring degree of constriction
+
+* Degree of consonant constriction (or lenition)
+* Prosodic factors such as stress (in many languages)
+
+Babanki example: stressed (stems) and unstressed (prefixes) don't seem to be differentiated by intensity
+
+* But stem H has a longer duration
+
+<img src="./assets/media/praat-bbk-intensity2.png" width="800">
+
+
+## Model use
+
+(other papers - prosody? lenition?)
 
 
 ## f0 and intensity figures
 
-f0 and intensity tracks can be added to figures
+f0 (pitch) and intensity tracks can easily be Drawn to figures as seen above
 
-* Best to put above/below a spectrogram or waveform
-* Shown below: pitch contour
+* In "Pitch" and "Intensity" menus, there is the option to Draw directly to the Picture window with or without a TextGrid
+* Best to combine with a TextGrid whenever possible
+* Below: pitch contour for Kejom <button onclick="document.getElementById('bush').play()"> [tə̀tāŋ tə́ tə́ꜜtóʔ]</button> "hills of bushes" <span class="cite">from Faytak & Akumbu (2021)</span> 
+
+<img src="./assets/media/praat-bbk-draw-pitch.png" width="700">
 
 
 ## Formant frequencies
 
 Formant frequencies provide **vowel quality** and other contrasts
 
-* F1 inversely relates to height
-* F2 inversely relates to backness
-* F3 directly relates to retroflexion, etc.
-
-Formant transitions; lateral and nasal quality, etc.
+* Formant transitions show place of consonants 
+* Lateral and nasal quality, etc.
 
 <img src="./assets/media/praat-formant-menu.png" width="700">
 
 
-## How to
+## Formant frequencies
 
-Turn on "show formants"
+Turn on "show formants", and formant tracks for the first three formants (F1, F2, F3) appear
 
-Query formant listing
+* All have some inverse relationship with a property $x$: the higher the frequency, the less $x$
+* F1 inversely relates to height (higher F1 = lower vowel)
+* F2 inversely relates to backness (higher F2 = fronter vowel)
+* F3 inversely relates to retroflexion (low F3 = more retroflexion) and other qualities
+
+<img src="./assets/media/praat-bbk-formants.png" width="700">
 
 
-## Formant estimation
+## Formant settings
 
-Unlike the other measures, formant estimation often requires calibration to individual speakers
+Estimating formant frequencies requires calibration for every individual speaker: low pitched voices need different settings compared to high pitched voices
 
-* Speakers with low f0 need different settings compared to speakers with higher f0
+* Often simplified to "men" versus "women", but there is a lot of variation in pitch for each
 * Children (with very high f0) can be especially difficult
-* Often, different settings are needed for front and back vowels (especially back rounded vowels)
 
-Adjust ceiling, adjust number of formants
+The default settings work well for **higher-pitched voices**
 
+* Lower-pitched voices need **fewer formants** and a **lower maximum frequency**
+
+<img src="./assets/media/praat-formant-settings.png" width="700">
+
+
+## Formant tracking
+
+The default settings of 5 formants in 5500 Hz (for higher-pitched voices) don't work well for the very low-pitched voice of the Babanki speaker:
+
+<img src="./assets/media/praat-bbk-poor-track.png" width="700">
+
+Better: changed to 4.5 formants, 4200 Hz; much lower frequency range
+
+<img src="./assets/media/praat-bbk-formants.png" width="700">
 
 ## Formant figures
 
-Formants work best in an F1-F2 plot (which is not made in Praat), but formant tracks can be drawn like any other measure
+Formant tracks work best in a plot of F1 against F2 (which is quite hard to make in Praat), but formant tracks can be drawn like any other measure
+
+* Draw separately from TextGrid and "un-garnish"
+* Much like we did for the spectrogram + TextGrid combination
+* "Speckle" under "Draw" produces this from an extracted Formant object
+
+<img src="./assets/media/praat-draw-speckle.png" width="700">
+
+## F1-F2 scatterplots
+
+F1-F2 scatterplots have F2 on the $x$ axis, F1 on the $y$ axis, with both axes **reversed** 
+
+* Praat does have a *limited* ability to make scatterplots
+* Must manually specify plot size
+* Can only use these four point types: x + o .
+* Limited ability to label or make legends
+
+<img src="./assets/media/praat-scatterplot.png" width="700">
+
+
+## Model use 
+
+Better scatterplot figures can be made using tabular data (see next section) <span class="cite">figure from Faytak & Akumbu (2021)</span>
+
+* Here, ellipses indicate where each cloud of points is centered
+
+<img src="./assets/media/faytak-akumbu-f1f2.png" width="500">
+
+* With this plot it becomes clear why we reverse the axes: vowel space resembles the IPA vowel trapezoid
+
+<img src="./assets/media/ipa-chart.png" width="500">
+
+
+## Model use 
+
+More examples: scatterplots with points showing?
+
 
 ## Voicing ("Pulses")
 
+Praat also detects measures relating to **voicing**: these are grouped under the unintuitive name "Pulses"
+
+* So called because voicing produces repeating, pulsing sounds
+* Detecting voicing = detecting regular pulses in the sound signal
+
+The Pulses menu contains the same "showing", measure-getting, and drawing functions as other menus
+
 <img src="./assets/media/praat-pulse-menu.png" width="700">
+
+The result: each detected "voice pulse", shown over waveform
+
+<img src="./assets/media/praat-bbk-pulses.png" width="700">
+
+
+## Display pulses
+
+The pulses themselves can be plotted with a TextGrid like any other similar object
+
+* Shaded areas indicate area where voice pulses occur repeatedly
+* Functions like a "voicing detector"
+
+<img src="./assets/media/praat-drawn-pulses.png" width="700">
+
 
 ## Voicing report
 
+If voicing has a predictable timing but varies in extent, the **voicing report** may be useful (access in the Pulses menu)
+
+* Specifically the number after "Fraction of locally unvoiced frames"
+
 <img src="./assets/media/praat-voice-report.png" width="700">
 
-## Practical use
+
+## Model use
+
+Are there any papers using voicing data from Praat??
 
 
+# Text output
 
 ## Tabular data
 
-The way numerical measurements are stored is important: store as **tabular data** (i.e. spreadsheets)
+The most effective way to store numerical measurements is important: **tabular data**, that is, **spreadsheets**
 
-* One observation (time point, tone, segment, etc) per row
+* One observation (time point, segment, etc) per row
 * One measure per column
-	* Can have multiple measures per time point
 * Name columns using the first row
-* Use more columns to provide other background information (speaker's ID, segment or word, experimental condition, etc)
+* Other columns give non-numerical information (speaker ID, segment, word, etc.)
 
-Can use Excel or Google Drive (.xls, .txt, or .csv format)
+Excel or Google Drive work well (.xls, .txt, or .csv format):
 
-* Manually building the tabular data in Excel is slow, but it works and requires no new skills
-* Google Sheets provides a free alternative to Excel, but data transfer might be expensive 
-* **Praat scripting** can quickly produce tabular data, but some new skills required, beyond the scope of this tutorial
+sample tabular data
+
+## Pitch
+
+* "Get pitch" (mean f0 of interval, or instantaneous f0 at a point)
+* Minimum/maximum pitch (points)
+* Pitch listing (time series)
+
+## Formants
+
+* All time series
+
+## Point vs. interval
+
+Depending on what your **cursor** is doing, "Listing" will get two different kinds of text output
+
+* If you have not selected an interval, you will get a **point** measurement
+
+* If you have selected an interval, you will get a **list**
+
+<img src="./assets/media/praat-midpoint-select.png" width="700">
 
 
-## Example
+## Ways to get it
+
+1. Paste each output into a text file on its own line
+2. Copy the text file
+3. Paste into spreadsheet
+
+
+
+## Pasting: single measurements
 
 * Include: Pius formant data
 
@@ -822,9 +1013,33 @@ Google Docs can get around this:
 
 <img src="./assets/media/gdocs-split-cols.png" width="700">
 
+Or fill in time series ("1, 2, 3, 4, ...")
+
+
+
+## Pasting: series of measurements
+
+If your data are in **time series** (multiple measures made in a row), like a formant or pitch track, you can try the following:
+
+1. Paste in data as before
+2. Count up and add number to a column (1, 2, 3, ... $total$)
+3. Write $total$ in every row for that observation in another column
+
+
+## Coding
+
+Beyond the scope of this tutorial, but more efficient in a number of areas: basic **coding**
+
+* **Praat scripting** can quickly produce tabular data
+* Plots can be made using R (or Excel!)
+* Mostly *free* software
+
+While there is a learning curve, the improvement to the process may pay off
 
 
 ## References {.bib}
+
+Akumbu, P. (2019). A featural analysis of mid and downstepped high tone in Babanki. In Clem, E., Jenks, P., & Sande, H., eds., *Theory and description in African linguistics: Selected papers from ACAL 47*, 3–20. <a href="https://d-nb.info/1194378684/34#page=13">PDF</a>
 
 Faytak, M., & Akumbu, P. W. (2021). Kejom (Babanki). *Journal of the International Phonetic Association*, 51(2), 333-354. <a href="https://doi.org/10.1017/S0025100319000264">Article</a>
 
@@ -835,6 +1050,10 @@ Ge, C., Xiong, Y., & Mok, P. (2021). How reliable are phonetic data collected re
 Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">Article</a>
 
 Parker, S. (2008). Sound level protrusions as physical correlates of sonority. *Journal of Phonetics*, 36(1), 55-90. <a href="https://doi.org/10.1016/j.wocn.2007.09.003">Abstract</a>
+
+Rialland, A. & Aborobongui, M. (2016). How intonations interact with tones in Embosi (Bantu C25), a two-tone language without downdrift. In Downing, L. & Rialland, A., eds., *Intonation in African tone languages* 195-xxx. <a href="https://doi.org/10.1515/9783110503524-007">DOI</a>
+<a href="
+https://direct.mit.edu/coli/article/46/4/713/97329/Sparse-Transcription">PDF</a>
 
 Sanker, C., Babinski, S., Burns, R., Evans, M., Johns, J., Kim, J., Smith, S., Weber, N., & Bowern, C. (2021). (Don't) try this at home! The effects of recording devices and software on phonetic analysis. *Language*, 97(4), e360-e382. <a href="https://muse.jhu.edu/article/840967/pdf">PDF</a>
 
