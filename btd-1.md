@@ -1,4 +1,4 @@
-% [verb]ing phonetics: workshop 1
+% Practical and instrumental phonetics workshop
 % Banto1d, 23 March 2022
 % Universität Hamburg<br/>
   Matthew Faytak<br/>
@@ -11,15 +11,20 @@ Part 1:
 * Assumptions
 * Why (instrumental) phonetics?
 * Acoustic data
-	* Using Praat
-	* Types of measurements
+* Using Praat
 
 Part 2:
 
-* Articulatory data
-* Data management
-* Using the data
+* Types of measurements
+* Making figures
+* Numerical and tabular data
+
+Part 3:
+
+* Beyond Praat: articulatory data
+* Practical considerations
 * Open discussion period
+
 
 ## About the slides
 
@@ -37,11 +42,33 @@ The slides are hosted <a href="https://github.com/mfaytak/afriphon">here</a> on 
 * This slideshow's URL is <a href="https://mfaytak.github.io/afriphon/btd-1.html">mfaytak.github.io/afriphon/btd-1.html</a>
 
 
+## References
+
+Nearly all references mentioned during the workshop are **linked** at the end of the slides
+
+* I have prioritized open-access materials as much as possible
+* I have aimed to include many "model papers" 
+* Attendees are encouraged to look up these sources at the end and reinforce what they'll learn today
+
+
 # Some assumptions
+
+## The situation
+
+Africa has long been regarded as central to phonetic description <span class="cite">Ladefoged (1968), Maddieson & Sands (2019)</span>
+
+* Complex tone systems abound
+* Clicks and tongue root harmony are found virtually nowhere else in the world
+* Most African languages remain phonetically undocumented <span class="cite">Whalen, DiCanio, & Dockum (2019)</span>
+
+But relatively little of this scholarship involves African scholars 
+
+* An issue we'll revisit a few times
+
 
 ## Participants
 
-We presume that you are:
+We presume that you, the participants, are:
 
 * Employed by, or trained at, a university on the African continent (sub-Sahara)
 * Researching in a low-resource context
@@ -697,11 +724,6 @@ One of the simplest measures: **duration** of segments or words
 
 ## Model use
 
-Duration of segments and subsegments
-
-* Duration of closure vs. release (voice onset time)
-* Gemination and vowel length
-
 An example from Babanki (**bbk-prenas.wav**): proportion of prenasalized consonants which is nasal <span class="cite">Faytak & Akumbu (2021)</span>
 
 <img src="./assets/media/praat-bbk-duration2.png" width="700">
@@ -711,9 +733,17 @@ An example from Babanki (**bbk-prenas.wav**): proportion of prenasalized consona
 * Babanki speakers produce *shorter, lighter prenasalization* before continuants
 * This may help to avoid merger of continuants and non-continuants
 
+
 ## Model use
 
-(other papers - prosodic factors?)
+Other phenomena studied with duration (not exhaustive):
+
+* Voice onset time <span class="cite">McKinney (1990); Connell (1994, 2002); Monaka (2006)</span>
+* Compensatory lengthening <span class="cite">Hamann, Miatto, & Downing (2019); Danis (2020)</span>
+* Any other timing relation you can think of (many, many possibilities)
+	* Consonant gemination
+	* Long vowels
+	* Lengthening of segments or syllables due to stress assignment
 
 
 ## Pitch (fundamental frequency, f0)
@@ -786,7 +816,11 @@ Sub-phonemic effects of intonation on tonemes can be examined <span class="cite"
 
 <img src="./assets/media/rialland-aborobongui.png" width="700">
 
-(other papers)
+Other tone topics (not exhaustive): 
+
+* Tone depressor consonants <span class="cite">Traill, Khumalo, & Fridjhon (1987); Chen & Downing (2011); Mathes & Chebanne (2018); Lotven & Berkson (2019)</span>
+* Formal representation of tone <span class="cite">Akumbu (2019); Gjersøe, Nformi, & Paschen (2019); Myers, Namyalo, & Kiriggwajjo (2019); McPherson (2020)</span>
+* Downdrift, downstep, and pitch reset <span class="cite">Genzel & Kügler (2011); Hamlaoui & Makasso (2019); Oppong (2021)</span>
 
 
 ## Intensity
@@ -819,7 +853,13 @@ Babanki example: stressed (stems) and unstressed (prefixes) don't seem to be dif
 
 ## Model use
 
-(other papers - prosody? lenition?)
+Implosive vs. non-implosive voiced stops have different intensity profiles <span class="cite">figure from Nagano-Madsen & Thornell (2012)</span>
+
+* See also <span class="cite">Naidoo (2012)</span>
+
+<img src="./assets/media/nagano.png" width="600">
+
+Numerous other uses in prosody
 
 
 ## f0 and intensity figures
@@ -879,6 +919,7 @@ Better: changed to 4.5 formants, 4200 Hz; much lower frequency range
 
 <img src="./assets/media/praat-bbk-formants.png" width="700">
 
+
 ## Formant figures
 
 Formant tracks work best in a plot of F1 against F2 (which is quite hard to make in Praat), but formant tracks can be drawn like any other measure
@@ -888,6 +929,7 @@ Formant tracks work best in a plot of F1 against F2 (which is quite hard to make
 * "Speckle" under "Draw" produces this from an extracted Formant object
 
 <img src="./assets/media/praat-draw-speckle.png" width="700">
+
 
 ## F1-F2 scatterplots
 
@@ -903,7 +945,7 @@ F1-F2 scatterplots have F2 on the $x$ axis, F1 on the $y$ axis, with both axes *
 
 ## Model use 
 
-Better scatterplot figures can be made using tabular data (see next section) <span class="cite">figure from Faytak & Akumbu (2021)</span>
+Better scatterplot figures can be made using tabular data (we'll discuss later) <span class="cite">figure from Faytak & Akumbu (2021)</span>
 
 * Here, ellipses indicate where each cloud of points is centered
 
@@ -916,7 +958,23 @@ Better scatterplot figures can be made using tabular data (see next section) <sp
 
 ## Model use 
 
-More examples: scatterplots with points showing?
+Formant data is useful in figuring out **harmony systems**; ATR or otherwise
+
+* Dagbani right-to-left ATR harmony also affects the low vowel /a/, counter to previous descriptions <span class="cite">figure from Hudu (2016)</span> 
+
+<img src="./assets/media/hudu-2013.png" width="600">
+
+* Moro's height harmony system may condition 'high' and 'low' /ə/, previously thought to be transparent to harmony <span class="cite">Ritchart & Rose (2015)</span>
+* Note presentation of data in a **table** in addition to a scatterplot
+
+<img src="./assets/media/ritchart1.png" width="600"> 
+
+<img src="./assets/media/ritchart2.png" width="600">
+
+Other uses for formant measures (non-exhaustive):
+
+* General description of vowel inventory <span class="cite">Koffi (2018), McPherson (2020)</span>
+* Characterizing harmony systems <span class="cite">Starwalt (2008); McCollum & Essegbey (2020)</span>
 
 
 ## Voicing ("Pulses")
@@ -956,14 +1014,31 @@ If voicing has a predictable timing but varies in extent, the **voicing report**
 
 ## Model use
 
-Are there any papers using voicing data from Praat??
+Voicing in unexpected places is common for labial-velars; this can be confirmed by looking for pulses <span class="cite">figure from Connell (1994)</span>
+
+<img src="./assets/media/connell-1994.png" width="600">
+
+Other voicing-related topics:
+
+* Mixed-voicing consonant clusters in Taa ("Khoi-san") <span class="cite">Nakagawa (2008); Naumann (2016)</span>
+* Lenition or devoicing of consonants <span class="cite">Solé, Hyman, & Monaka (2010); Boyer & Zsiga (2013); Bendjaballah & Le Gac (2021)</span> 
 
 
-# Text output
+# Text output and tabular data
+
+## Getting out of Praat
+
+Praat is useful, but it has important **limitations**
+
+* Hard to produce all types of figures
+* Can't do statistical analysis (which is standard for phonetics)
+
+Because of this, we often need to **export** data from Praat into other programs
+
 
 ## Tabular data
 
-The most effective way to store numerical measurements is important: **tabular data**, that is, **spreadsheets**
+The most effective way to export numerical measurements: **tabular data**, that is, **spreadsheets**
 
 * One observation (time point, segment, etc) per row
 * One measure per column
@@ -974,56 +1049,99 @@ Excel or Google Drive work well (.xls, .txt, or .csv format):
 
 sample tabular data
 
-## Pitch
 
-* "Get pitch" (mean f0 of interval, or instantaneous f0 at a point)
-* Minimum/maximum pitch (points)
-* Pitch listing (time series)
+## Spreadsheet construction
 
-## Formants
+Basic approach to making tabular data is to
 
-* All time series
+1. Generate text output in Praat
+2. Copy-paste into a spreadsheet
+3. Add metadata
+
+
+## Praat text output
+
+Text output is generated using the **menus**
+
+* ...
+
 
 ## Point vs. interval
 
 Depending on what your **cursor** is doing, "Listing" will get two different kinds of text output
 
 * If you have not selected an interval, you will get a **point** measurement
-
 * If you have selected an interval, you will get a **list**
+
+A shortcut exists to get the **midpoint** of any interval
 
 <img src="./assets/media/praat-midpoint-select.png" width="700">
 
 
-## Ways to get it
+## "Get..." versus "Listing..."
 
-1. Paste each output into a text file on its own line
-2. Copy the text file
-3. Paste into spreadsheet
+"Get..." provides a measurement at a point, or a **mean** measurement across an interval 
+
+* "Get pitch"
+* "Get intensity"
+* "Get $n$th formant"
+
+"Listing..." provides *all* measures within an interval if selected
+
+* "Pitch listing"
+* "Intensity listing"
+* "Formant listing"
+* ("Pulse listing": timing of pulses)
+
+"Voice report" is an exception: needs an interval, and generates a large number of different measures
 
 
+## Exceptions
 
-## Pasting: single measurements
+f0/pitch has some special options:
 
-* Include: Pius formant data
+* "Get pitch" (mean f0 of interval, or instantaneous f0 at a point)
+* Minimum/maximum pitch (points)
+* Pitch listing (time series)
 
-how to paste easily? Praat adds three spaces (instead of a tab) between measurement columns, so each row is read as a single string 
 
-Google Docs can get around this:
+## Example: mean/max/min pitches
+
+Simple copy-paste, one observation per row
+
+basic schematic image
+
+
+## Example: formant listing
+
+Listings are trickier:
+
+* Comes with time points that need to be included
+* Number of time points varies
+* 
+
+Listing data is tricky, especially formant data, because it comes in multiple columns
+
+* ???
+
+Google Docs can split Praat formant text data into columns:
 
 <img src="./assets/media/gdocs-split-cols.png" width="700">
 
-Or fill in time series ("1, 2, 3, 4, ...")
+Excel can also handle this upon import (not pasting)
+
+* This equally applies to pitch, intensity listings
 
 
-
-## Pasting: series of measurements
+## Listings generally
 
 If your data are in **time series** (multiple measures made in a row), like a formant or pitch track, you can try the following:
 
 1. Paste in data as before
 2. Count up and add number to a column (1, 2, 3, ... $total$)
 3. Write $total$ in every row for that observation in another column
+
+simpler time series example (stack 2 obs.)
 
 
 ## Coding
@@ -1037,9 +1155,242 @@ Beyond the scope of this tutorial, but more efficient in a number of areas: basi
 While there is a learning curve, the improvement to the process may pay off
 
 
+# BREAK
+
+
+# Articulatory data
+
+## Acoustics vs. articulation
+
+Acoustics gives us an **indirect idea** of the movements of the articulators
+
+Sometimes, though, we need to look directly at the articulators
+
+* If there are multiple explanations for acoustics
+* If the examined sounds are totally unfamiliar or especially unusual
+* In the Bantoid area, this is not uncommon!
+
+
+## Lip articulation
+
+Movement of tongue and lips: lips are easily seen moving
+
+* Mirror at 45 degree angle provides a side view
+
+<img src="./assets/media/lip-mirror.png" width="600">
+
+Babanki vowels: 
+
+* Spread, unrounded [i]
+* Compressed 
+* Rounded [u]
+
+<img src="./assets/media/bbk-lip.png" width="800">
+
+
+## Examples
+
+Lip activity during Medumba [ʉ]: compressed like a bilabial stop, often leading to bilabial trill [ʙ] <span class="cite">Olson & Meynadier (2015)</span>
+
+<img src="./assets/media/kom-palatography.png" width="600">
+
+
+## Palatographs
+
+More complex, but provide information on tongue-palate contact <span class="cite">Anderson (2008)</span>
+
+* stop and fricative place
+* certain aspects of vowel articulation
+
+Method
+
+* paint tongue
+* one token involving one lingual consonant
+* open mouth, insert mirror, photograph
+
+<img src="./assets/media/palatography-side.png" width="600">
+
+
+## Examples
+
+Kom high vowels (which I will be talking about in my regular talk)
+
+* Kom iz vs. i
+* Audio examples
+
+<img src="./assets/media/kom-palatography.png" width="700">
+
+
+## Examples
+
+Excellent evidence of the phonetic basis of a lingual contrast
+
+* Dental vs. (post)alveolar stop contrast in Lusoga <span class="cite">Nabirye, de Schryver, & Verhoeven (2016)</span>
+
+<img src="./assets/media/nabirye.png" width="700">
+
+
+## Equipment
+
+Everything that we've talked about involves **minimal equipment**
+
+* Smartphone camera or point-and-shoot camera
+* **Dental mirror**: or hand-held metal mirror, about 6cm wide and 12cm long
+  * Held outside for lip angles
+  * Inserted against upper molars for palatography
+* Edible pigment (chocolate powder, edible charcoal) for palatography
+* A brush for painting the tongue (I prefer a narrow paintbrush or a makeup brush)
+
+Optional:
+
+* Phone tripod or camera tripod
+* Photography lighting
+
+
+## Figures vs. tabular data
+
+The value of photographic evidence as a figure should be obvious
+
+In exceptional cases, you may measure some physical attribute of articulatory pictures/images and convert that to **tabular data**
+
+* i.e. ratio of lip opening to lip width (or height-height) in pixels
+* lip example/schematic
+
+
+## Other articulations
+
+It should be mentioned that certain articulations further back are not discussed here
+
+* Dorsal or pharyngeal consonants
+* Complex tongue shapes, as in clicks
+* Advanced/retracted tongue root
+
+However, **ultrasound** technology is gradually making it easier to image these articulations <span class="cite">Miller, Namaseb & Iskarous (2007); Hudu (2014)</span>
+
+* Entirely portable and non-invasive
+* But some significant technical barriers remain
+
+
+# Practical considerations
+
+## File naming and metadata
+
+Name your recording files according to the same logical pattern
+
+* Date, language, topic
+* Avoid duplicating names
+* Avoid vague names
+
+To identify further details, speak them during *the recording itself*
+
+* Identify and name yourself
+* Identify speaker(s) and their roles if this is not sensitive information
+* Identify anyone else who may be heard in the recording (assistants, translators, etc.)
+* Give time, date, and location of recording
+
+
+## File backups
+
+Back up *every recording* in multiple locations if possible, to avoid technological problems or theft destroying your work
+
+* SD cards or thumb drives
+* Multiple computers (share key files with a trusted colleague)
+* Email small files to yourself (download as attachments later)
+* Long-term cloud storage (Google Drive, OneDrive, Box, Dropbox, etc) is ideal but uploading may be expensive
+
+
+## Tabular data 
+
+Tabular data consisting of many measures needs to be averaged, summarized (mean/standard deviation), or submitted to a statistical model
+
+Averaging and basic statistical models can be done on this data, using Excel's Data Analysis Tools (need to install)
+
+* While Excel *works*, learning a dedicated statistical program is better in the long run
+
+picture example?
+
+
+## Statistics
+
+Simple statistical analysis and modeling are standard in phonetics for analysis of numerical data (t-testing, linear models, curve fitting, etc)
+
+* We acknowledge this is not practical for all attendees, but collaborators can help guide this work
+* Having nicely formatted tabular data is crucial to this handoff
+
+If you want to try stats yourself, it's best to find software for handling tabular data:
+
+* <a href="https://www.r-project.org/">R</a> is free software which is useful for statistical analysis
+* Excel can also be used 
+* Simple plots can also be made in Excel and R
+
+
+## Statistical power
+
+Because of the need to model the data, it's important to have enough **statistical power**
+
+* Need to ensure you have collected numerous repetitions of the phenomenon you're after
+* Need to ensure that enough **speakers** are recorded (the more the better)
+  * To get at the community average, instead of the idiosyncrasies of one speaker
+
+
+# Conclusions
+
+## Summary
+
+We've covered:
+
+* Basics of instrumental phonetics
+* Praat (annotations, figures, measurements)
+* Text and tabular data
+* Photography for articulation data
+* Practical tips
+
+What remains to be seen:
+
+* Long-term prospects for the methods
+* Unanticipated stumbling blocks
+* Incorporating further methodological advances
+
+
+## An audit
+
+In compiling these slides and the references they contain, I reflected upon:
+
+* The current state of the phonetics literature for African languages
+* Who writes that literature
+* Who is cited here 
+
+It is clear that African linguists are under-represented at every level, regardless of how you define "African linguist"
+
+figure showing count of first/any authors of African extraction/birth
+
+figure showing count of first/any authors of African *affiliation*
+
+
+## Open discussion
+
+Some potential topics for discussion:
+
+* How can we build capacity for this work in Africa's universities?
+* Can existing high-quality documentary work be used as a starting point?
+* How can we advise this work when (not "if") students decide to pursue it?
+* What should be the role of linguists off the continent in developing this area? 
+
+
 ## References {.bib}
 
-Akumbu, P. (2019). A featural analysis of mid and downstepped high tone in Babanki. In Clem, E., Jenks, P., & Sande, H., eds., *Theory and description in African linguistics: Selected papers from ACAL 47*, 3–20. <a href="https://d-nb.info/1194378684/34#page=13">PDF</a>
+Akumbu, P. (2019). A featural analysis of mid and downstepped high tone in Babanki. In Clem, E., Jenks, P., & Sande, H., eds., *Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics*, 3–20. <a href="https://langsci-press.org/catalog/view/192/1150/1590-1">PDF</a>
+
+Anderson, V. (2008). Static palatography for language fieldwork. *Language Documentation & Conservation*, 2(1), 1-27. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/1808">Article</a>
+
+Bendjaballah, S. & Le Gac, D. (2021). The acoustics of word-initial and word-internal voiced stops in Somali. *Journal of the International Phonetic Association*, first view. <a href="https://doi.org/10.1017/S0025100321000281">Abstract</a>
+
+Boyer, O., & Zsiga, E. (2013). Phonological devoicing and phonetic voicing in Setswana. In Ọla Orie, Ọ. and Sanders, K., eds., *Selected Proceedings of the Annual Conference on African Linguistics*, 43, 82-89. <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.657.5153&rep=rep1&type=pdf">PDF</a>
+
+Connell, B. (1994). The structure of labial-velar stops. *Journal of Phonetics*, 22(4), 441-476. <a href="https://doi.org/10.1016/S0095-4470(19)30295-5">Abstract</a>
+
+Danis, N. (2020). Yorùbá vowel deletion involves compensatory lengthening: Evidence from phonetics. *Stellenbosch Papers in Linguistics Plus*, 60(1), 1-12.
+<a href="https://hdl.handle.net/10520/ejc-spilplus-v60-n1-a1">Abstract & PDF</a>
 
 Faytak, M., & Akumbu, P. W. (2021). Kejom (Babanki). *Journal of the International Phonetic Association*, 51(2), 333-354. <a href="https://doi.org/10.1017/S0025100319000264">Article</a>
 
@@ -1047,14 +1398,72 @@ Gahl, S. (2008). *Time* and *Thyme* Are not Homophones: The Effect of Lemma Freq
 
 Ge, C., Xiong, Y., & Mok, P. (2021). How reliable are phonetic data collected remotely? Comparison of recording devices and environments on acoustic measurements. In *Proc Interspeech 2021*, 1683-1687. <a href="http://ling.cuhk.edu.hk/people/peggy/GeXiongMok_Interspeech2021.pdf">PDF</a>
 
+Genzel, S. & Kügler, F. (2011). Phonetic realization of automatic (downdrift) and non-automatic downstep in Akan. *Proceedings of ICPhS 17*, Hong Kong. <a href="http://icphs2011.hk.lt.cityu.edu.hk/resources/OnlineProceedings/RegularSession/Genzel/Genzel.pdf">PDF</a>
+
+Gjersøe, S., Nformi, J., & Paschen, L. (2019). Hybrid falling tones in Limbum. In Clem, E., Jenks, P. & Sande, H., eds., *Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics*, 95-118. <a href="https://langsci-press.org/catalog/view/192/1484/1595-1">PDF</a>
+
+Hamlaoui, F. & Makasso, E. (2019). Downstep and recursive phonological phrases in Bàsàá (Bantu A43). In Clem, E., Jenks, P. & Sande, H., eds., *Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics*, 155-175. <a href="https://langsci-press.org/catalog/view/192/1487/1598-1">PDF</a>.
+
+Hudu, F. (2014). [ATR] feature involves a distinct tongue root articulation: Evidence from ultrasound imaging. *Lingua*, 143, 36-51. <a href="https://doi.org/10.1016/j.lingua.2013.12.009">Abstract</a>
+
+Hudu, F. (2016). A phonetic inquiry into Dagbani vowel neutralisations. *Journal of African Languages and Linguistics*, (37)1, 59-89. <a href="https://doi.org/10.1515/jall-2016-0002">Abstract</a>
+
 Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">Article</a>
+
+Koffi, E. (2018). The acoustic vowel space of Anyi in light of the cardinal vowel system and
+the Dispersion Focalization Theory. In Kandybowicz, J., Major, T., Torrence, H., & Duncan, P., eds., *African linguistics on the prairie: Selected papers from the 45th Annual Conference on African Linguistics*. <a href="https://langsci-press.org/catalog/view/120/1321/1099-2">PDF</a>
+
+Ladefoged, P. (1968). *A phonetic study of West African languages: An auditory-instrumental survey.* Cambridge University Press. 
+
+Lotven, S. & Berkson, K. (2019). The phonetics and phonology of depressor consonants in Gengbe. In Clem, E., Jenks, P. & Sande, H., eds., *Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics*, 249-268. <a href="https://langsci-press.org/catalog/view/192/1492/1603-1">PDF</a>
+
+Maddieson, I. & Sands, B. (2019). The sounds of the Bantu languages. In Van de Velde, M., Bostoen, K., Nurse, D., & Philippson, G., eds., *The Bantu Languages: Second Edition*, 79-127. Routledge. <a href="https://www.researchgate.net/profile/Bonny-Sands/publication/323369007_The_sounds_of_the_Bantu_languages/links/5a906c28aca2721405622bfb/The-sounds-of-the-Bantu-languages.pdf">Preprint</a>
+
+Mathes, T. & Chebanne, A. (2018). High tone lowering and raising in Tsua. *Stellenbosch Papers in Linguistics Plus*, 54, 1-16. <a href="https://www.ajol.info/index.php/splp/article/view/184478">Abstract & PDF</a>
+
+McCollum, A. & Essegbey, J. (2020). Initial prominence and progressive vowel harmony in Tutrugbu *Phonological Data and Analysis* 2(3), 1-37. <a href="https://doi.org/10.3765/pda.v2art3.14">Abstract & PDF</a>
+
+McKinney, N. (1990). Temporal characteristics of fortis stops and affricates in Tyap and Jju. *Journal of Phonetics*, <a href="https://doi.org/10.1016/S0095-4470(19)30392-4">Abstract</a>
+
+McPherson, L. (2020). Seenku. *Journal of the International Phonetic Association*, 50(2), 220-239. <a href="https://doi.org/10.1017/S0025100318000312">Abstract</a>
+
+Miller, A., Namaseb, L., & Iskarous, K. (2007). Tongue body constriction differences in click types. *Laboratory Phonology*, 9, 643-656. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.2851&rep=rep1&type=pdf">PDF</a> 
+
+Monaka, K. (2005). Shekgalagari stops and theories of phonological representation. *Lwati: A Journal of Contemporary Research*, 2, 24-42. <a href="https://doi.org/10.4314/lwati.v2i1.36780">Abstract & PDF</a>
+
+Myers, S., Namyalo, S., & Kiriggwajjo, A. (2019). F0 timing and tone contrasts in Luganda. Phonetica, 76(1), 55-81. <a href="https://doi.org/10.1159/000491073">Abstract</a>
+
+Nabirye, M., de Schryver, G., & Verhoeven, J. (2016). Lusoga (Lutenga). *Journal of the International Phonetic Association*, 46(2), 219-228. <a href="https://doi:10.1017/S0025100315000249">Abstract & PDF</a>
+
+Nagano-Madsen, Y. & Thornell, C. (2012). Acoustic properties of implosives in Bantu Mpiemo. In Eriksson, A. & Abelin, Å., eds., *Proceedings of FONETIK 2012*, Gothenburg, 73-76. <a href="
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.397.802&rep=rep1&type=pdf#page=81">PDF</a>
+
+Naidoo, S. (2012). A re-evaluation of the Zulu implosive [ɓ]. *South African Journal of African Languages*, 30(1), 1-10. <a href="https://doi.org/10.1080/02572117.2010.10587331">Abstract</a>
+
+Nakagawa, H. (2008). Aspects of the phonetic and phonological structure of the G\|ui language (Doctoral dissertation). <a href="https://core.ac.uk/download/pdf/39664836.pdf">Synopsis</a>
+
+Naumann, C. (2016). The phoneme inventory of Taa (West !Xoon dialect). In Vossen, R. & Haacke, W., eds., *Lone Tree: Scholarship in Service of the Koon. Essays in memory of Anthony Traill*. Köln: Rüdiger Köppe Velag. <a href="https://d1wqtxts1xzle7.cloudfront.net/54707358/Naumann2009PhonemeInventoryTaaMS-with-cover-page-v2.pdf?Expires=1647648067&Signature=Q8aXSTuE9W419Bls~PVVILRHSZ~Ownk82e~1DvLJlVD2Zzp40MBMBjVUJk3Z9Hv00yAAoopFy8LIC0hG~mn2ChPBeJ2EQKtpjK90wvNwyl7AzU2uK1oYhJgNO0BQsH~ZpsW-eibvYlODvm7ADrIRJf~Q9iUopqkmPMFSTV2Ri4DBhxJ9qoSB3LGMkrS3dGRP42biILfDxSqU2H71Yy4Q~~rICVWZaNyKWFBnCc0gEWIbPT3SdY9PqbzB0iCWa8fO-00BGjlw7k0hekGi7Q7swUbYpw0F9USh-DmNkKFRE5Bfz~7Uuw73tFacKra1DR~BsSGJbNgFzXCiktPvJUCa-Q__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">PDF</a>
+
+Olson, K. & Meynadier, Y. (2015) On Medumba bilabial trills and vowels. *Proceedings of ICPhS 18*, Glasgow. <a href="https://hal.archives-ouvertes.fr/hal-01211220/file/2015_ICPhS_Olson.pdf">PDF</a>
+
+Oppong, O. (2021). Pitch reset in Asante Twi, a dialect of Akan. MA Thesis, University of Helsinki. <a href="http://hdl.handle.net/10138/331097">Abstract & PDF</a>
 
 Parker, S. (2008). Sound level protrusions as physical correlates of sonority. *Journal of Phonetics*, 36(1), 55-90. <a href="https://doi.org/10.1016/j.wocn.2007.09.003">Abstract</a>
 
-Rialland, A. & Aborobongui, M. (2016). How intonations interact with tones in Embosi (Bantu C25), a two-tone language without downdrift. In Downing, L. & Rialland, A., eds., *Intonation in African tone languages* 195-xxx. <a href="https://doi.org/10.1515/9783110503524-007">DOI</a>
+Rialland, A. & Aborobongui, M. (2016). How intonations interact with tones in Embosi (Bantu C25), a two-tone language without downdrift. In Downing, L. & Rialland, A., eds., *Intonation in African tone languages* 195-xxx. Berlin: Mouton de Gruyter. <a href="https://doi.org/10.1515/9783110503524-007">DOI</a>
 <a href="
 https://direct.mit.edu/coli/article/46/4/713/97329/Sparse-Transcription">PDF</a>
 
+Ritchart, A. & Rose, S. (2015). Schwas in Moro Vowel Harmony. In Kramer, R., Zsiga, E., & Tlale Boyer, O., eds., *Selected Proceedings of the 44th Annual Conference on African Linguistics*, 231-242. <a href="https://pages.ucsd.edu/~aritchart/Ritchart_Rose_2015_ACAL44.pdf">PDF</a>
+
 Sanker, C., Babinski, S., Burns, R., Evans, M., Johns, J., Kim, J., Smith, S., Weber, N., & Bowern, C. (2021). (Don't) try this at home! The effects of recording devices and software on phonetic analysis. *Language*, 97(4), e360-e382. <a href="https://muse.jhu.edu/article/840967/pdf">PDF</a>
+
+Solé, M. J., Hyman, L. M., & Monaka, K. C. (2010). More on post-nasal devoicing: The case of Shekgalagari. *Journal of Phonetics*, 38(4), 604-615. <a href="https://doi.org/10.1016/j.wocn.2010.09.002">Abstract</a> <a href="http://www.linguistics.berkeley.edu/PhonLab/documents/2009/Shekgalagari_USletter_PLAR.pdf">Preprint</a>
+
+Starwalt, C. (2008). The acoustic correlates of ATR harmony in seven-and nine-vowel African languages: A phonetic inquiry into phonological structure. PhD dissertation, The University of Texas at Arlington. <a href="https://www.proquest.com/docview/304842357?pq-origsite=gscholar&fromopenview=true">PDF</a>
+
+Traill, A., Khumalo, J., & Fridjhon, P. (1987). Depressing facts about Zulu. *African Studies* 46(2), 255-274. <a href="https://doi.org/10.1080/00020188708707678">Abstract & PDF</a>
+
+Whalen, D. H., DiCanio, C., & Dockum, R. (2020). Phonetic documentation in three collections: Topics and evolution. *Journal of the International Phonetic Association*, ##, 1-27. <a href="https://doi.org/10.1017/S0025100320000079">Abstract</a>
 
 Zee, E. (1981). Effect of vowel quality on perception of post–vocalic nasal consonants in noise. *Journal of Phonetics*, 9(1), 35-48. <a href="https://doi.org/10.1016/S0095-4470(19)30925-8">Abstract</a>
