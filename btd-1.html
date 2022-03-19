@@ -100,6 +100,8 @@ Banto1d, 23 March 2022
 
 </ul>
 
+<p>There will be regular breaks!</p>
+
 </div>
 
 <div id="about-the-slides" class="slide section level2">
@@ -217,6 +219,8 @@ Banto1d, 23 March 2022
 <ul>
 
 <li>Ethos: “some data is better than no data”</li>
+
+<li>Crucial to advancing scientific research</li>
 
 <li>Important as starting point for technical development</li>
 
@@ -681,6 +685,8 @@ Clipping of whole utterance
 </ul>
 
 </div>
+
+<div id="break" class="title-slide slide section level1"><h1>BREAK</h1></div>
 
 <div id="basic-praat-tutorial" class="title-slide slide section level1"><h1>Basic Praat (tutorial)</h1></div><div id="downloading-and-configuring" class="slide section level2">
 
@@ -1247,6 +1253,8 @@ Clipping of whole utterance
 <p><img src="./assets/media/praat-save-picture.png" width="600"></p>
 
 </div>
+
+<div id="break-1" class="title-slide slide section level1"><h1>BREAK</h1></div>
 
 <div id="measuring-phonetic-properties" class="title-slide slide section level1"><h1>Measuring phonetic properties</h1></div><div id="why-numerical-measurements" class="slide section level2">
 
@@ -1866,49 +1874,61 @@ Clipping of whole utterance
 
 </ul>
 
-<p>Excel or Google Drive work well (.xls, .txt, or .csv format):</p>
+<p>Google Drive or Excel both work well (.xls, .txt, or .csv format)</p>
 
-<p>sample tabular data</p>
+<ul>
 
-</div><div id="spreadsheet-construction" class="slide section level2">
+<li>I will be using Google Drive for examples, but all of this can be done with Excel too</li>
 
-<h1>Spreadsheet construction</h1>
+</ul>
 
-<p>Basic approach to making tabular data is to</p>
+<p><img src="./assets/media/gdocs-duration.png" width="700"></p>
+
+</div><div id="data-construction-duration" class="slide section level2">
+
+<h1>Data construction: duration</h1>
+
+<p>We’ll use <strong>duration</strong> to demonstrate the most basic spreadsheet construction</p>
 
 <ol style="list-style-type: decimal">
 
-<li>Generate text output in Praat</li>
+<li>Select an interval</li>
 
-<li>Copy-paste into a spreadsheet</li>
+<li>Generate text output in Praat (“Query” menu)</li>
+
+<li>Copy-paste output into spreadsheet</li>
 
 <li>Add metadata</li>
 
 </ol>
 
+<p><img src="./assets/media/praat-get-duration.png" width="500"> <img src="./assets/media/praat-duration-output.png" width="350"></p>
+
+<p>Repeat this process for each of your observations, starting a <strong>new row</strong> each time</p>
+
+<p><img src="./assets/media/gdocs-paste-cell.png" width="600"></p>
+
 </div><div id="praat-text-output" class="slide section level2">
 
 <h1>Praat text output</h1>
 
-<p>Text output is generated using the <strong>menus</strong></p>
+<p>Text output is generated using the <strong>menus</strong> above the data display</p>
 
 <ul>
 
-<li>…</li>
+<li>Duration: under “Query” after selecting an interval</li>
+
+<li>Pitch, intensity, formants, voicing (“Pulses”) are all under their expected menus</li>
 
 </ul>
 
-</div><div id="point-vs.-interval" class="slide section level2">
-
-<h1>Point vs. interval</h1>
-
-<p>Depending on what your <strong>cursor</strong> is doing, “Listing” will get two different kinds of text output</p>
+<p>For any measure other than duration, menus behave slightly differently depending on whether your cursor has selected an <strong>interval</strong> or not</p>
 
 <ul>
 
-<li>If you have not selected an interval, you will get a <strong>point</strong> measurement</li>
+<li>If you have selected an interval, you will get a <strong>list</strong> or an <strong>average</strong> (mean) of measurements</li>
 
-<li>If you have selected an interval, you will get a <strong>list</strong></li>
+<li>If you have not selected an interval, you will get a <strong>point</strong> measurement</li>
 
 </ul>
 
@@ -1920,7 +1940,7 @@ Clipping of whole utterance
 
 <h1>“Get…” versus “Listing…”</h1>
 
-<p>“Get…” provides a measurement at a point, or a <strong>mean</strong> measurement across an interval</p>
+<p>“Get…” provides a single measurement, or a single <strong>mean</strong> measurement across an interval</p>
 
 <ul>
 
@@ -1928,11 +1948,11 @@ Clipping of whole utterance
 
 <li>“Get intensity”</li>
 
-<li>“Get <span class="math inline"><em>n</em></span>th formant”</li>
+<li>“Get <span class="math inline"><em>n</em></span>th formant” (F1, F2, etc)</li>
 
 </ul>
 
-<p>“Listing…” provides <em>all</em> measures within an interval if selected</p>
+<p>“Listing…” provides <em>every single</em> measure within an interval</p>
 
 <ul>
 
@@ -1946,85 +1966,141 @@ Clipping of whole utterance
 
 </ul>
 
-<p>“Voice report” is an exception: needs an interval, and generates a large number of different measures</p>
-
-</div><div id="exceptions" class="slide section level2">
-
-<h1>Exceptions</h1>
-
-<p>f0/pitch has some special options:</p>
+<p>Exceptions:</p>
 
 <ul>
 
-<li>“Get pitch” (mean f0 of interval, or instantaneous f0 at a point)</li>
+<li>Minimum and Maximum Pitch can also be calculated for an interval</li>
 
-<li>Minimum/maximum pitch (points)</li>
-
-<li>Pitch listing (time series)</li>
+<li>“Voice report” for an interval generates a large number of different measures</li>
 
 </ul>
 
-</div><div id="example-meanmaxmin-pitches" class="slide section level2">
+</div><div id="data-construction-single-pitch" class="slide section level2">
 
-<h1>Example: mean/max/min pitches</h1>
+<h1>Data construction: single pitch</h1>
 
-<p>Simple copy-paste, one observation per row</p>
+<p>Mean, max, and min f0 measures (from “Get…”) can be copy-pasted into their own cell just like our duration example</p>
 
-<p>basic schematic image</p>
+<p><img src="./assets/media/praat-pitch-point-output.png" width="500"></p>
 
-</div><div id="example-formant-listing" class="slide section level2">
-
-<h1>Example: formant listing</h1>
-
-<p>Listings are trickier:</p>
+<p>Listings (f0 over time) are trickier to paste:</p>
 
 <ul>
 
-<li>Comes with time points that need to be included</li>
+<li>Multiple columns (time points need to be included)</li>
 
 <li>Number of time points varies</li>
 
-<li></li>
+<li>May have unsuccessful measurements (“–undefined–”)</li>
 
 </ul>
 
-<p>Listing data is tricky, especially formant data, because it comes in multiple columns</p>
+</div><div id="data-construction-pitch-listing" class="slide section level2">
 
-<ul>
+<h1>Data construction: pitch listing</h1>
 
-<li>???</li>
-
-</ul>
-
-<p>Google Docs can split Praat formant text data into columns:</p>
-
-<p><img src="./assets/media/gdocs-split-cols.png" width="700"></p>
-
-<p>Excel can also handle this upon import (not pasting)</p>
-
-<ul>
-
-<li>This equally applies to pitch, intensity listings</li>
-
-</ul>
-
-</div><div id="listings-generally" class="slide section level2">
-
-<h1>Listings generally</h1>
-
-<p>If your data are in <strong>time series</strong> (multiple measures made in a row), like a formant or pitch track, you can try the following:</p>
+<p>We’ll take pitch as an example, but these instructions will work for <em>any listing</em></p>
 
 <ol style="list-style-type: decimal">
 
-<li>Paste in data as before</li>
+<li>Select interval</li>
 
-<li>Count up and add number to a column (1, 2, 3, … <span class="math inline"><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></span>)</li>
+<li>Generate text output (“Pitch listing”) and copy entire contents of text box
 
-<li>Write <span class="math inline"><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></span> in every row for that observation in another column</li>
+<ul>
+
+<li>If you’ve already got the header line, you don’t need the first line</li>
+
+</ul></li>
 
 </ol>
 
-<p>simpler time series example (stack 2 obs.)</p>
+<p><img src="./assets/media/praat-pitch-copy.png" width="700"></p>
+
+</div><div id="data-construction-pitch-listing-1" class="slide section level2">
+
+<h1>Data construction: pitch listing</h1>
+
+<p>Continued:</p>
+
+<ol start="3" style="list-style-type: decimal">
+
+<li>Paste into spreadsheet</li>
+
+<li>In paste menu, split columns using “Custom”; use <em>two</em> spaces ( )</li>
+
+</ol>
+
+<p><img src="./assets/media/gdocs-pitch-paste.png" width="700"></p>
+
+<ol start="5" style="list-style-type: decimal">
+
+<li>Fill in metadata</li>
+
+</ol>
+
+<p><img src="./assets/media/gdocs-pitch-meta.png" width="700"></p>
+
+</div><div id="times-for-listings" class="slide section level2">
+
+<h1>Times for listings</h1>
+
+<p>Unlike before, we need to contextualize the <strong>time</strong> values and <strong>normalize</strong> them</p>
+
+<ul>
+
+<li>Compare across speakers, who might have different speeds</li>
+
+<li>Compare across repetitions, because speakers vary their speed</li>
+
+</ul>
+
+<p>The best way to do this:</p>
+
+<ol style="list-style-type: decimal">
+
+<li>Count rows in your series and add the <span class="math inline"><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></span> number of samples into each row in a <span class="math inline"><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></span> column</li>
+
+<li>Add an <span class="math inline"><em>i</em><em>n</em><em>d</em><em>e</em><em>x</em></span> value in a column indicating which number sample we are on (1, 2, 3 … <span class="math inline"><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></span>)</li>
+
+<li>Calculate <em>percent of total duration</em> by dividing <span class="math inline"><em>i</em><em>n</em><em>d</em><em>e</em><em>x</em></span> / <span class="math inline"><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></span> and adding this to a third column <span class="math inline"><em>n</em><em>o</em><em>r</em><em>m</em></span></li>
+
+<li>Be sure to include –undefined– values as empty cells</li>
+
+</ol>
+
+<p><img src="./assets/media/gdocs-pitch-all.png" width="700"></p>
+
+</div><div id="data-construction-formant-listing" class="slide section level2">
+
+<h1>Data construction: formant listing</h1>
+
+<p>Same as pitch listing, but note there are four columns for F1-F4, plus one for times</p>
+
+<p>Much as above, but with more measurement columns:</p>
+
+<p><img src="./assets/media/gdocs-formant-paste.png" width="700"></p>
+
+<p><img src="./assets/media/gdocs-formant-all.png" width="700"></p>
+
+</div><div id="value-of-listings" class="slide section level2">
+
+<h1>Value of listings</h1>
+
+<p>Working with listings is more difficult than working with mean measures, but having <strong>time series</strong> of measurements is valuable</p>
+
+<ul>
+
+<li>Limbum question prosody involves boundary tones such as L%</li>
+
+<li>These exert lowering effects and create phonetic contour tones <span class="cite">figure from Gjersøe, Nformi, &amp; Paschen (2019)</span></li>
+
+<li>Plots contain <strong>average</strong> pitch tracks for 300-400 sentence readings, 3 speakers</li>
+
+</ul>
+
+<p><img src="./assets/media/gjersoe-nformi.png" width="700"></p>
 
 </div><div id="coding" class="slide section level2">
 
@@ -2034,7 +2110,7 @@ Clipping of whole utterance
 
 <ul>
 
-<li><strong>Praat scripting</strong> can quickly produce tabular data</li>
+<li><strong>Praat scripting</strong> can more quickly produce tabular data (ask us how!)</li>
 
 <li>Plots can be made using R (or Excel!)</li>
 
@@ -2042,11 +2118,11 @@ Clipping of whole utterance
 
 </ul>
 
-<p>While there is a learning curve, the improvement to the process may pay off</p>
+<p>While there is a steeper learning curve, the improvement to the process may pay off in the long run</p>
 
 </div>
 
-<div id="break" class="title-slide slide section level1"><h1>BREAK</h1></div>
+<div id="break-2" class="title-slide slide section level1"><h1>BREAK</h1></div>
 
 <div id="articulatory-data" class="title-slide slide section level1"><h1>Articulatory data</h1></div><div id="acoustics-vs.-articulation" class="slide section level2">
 
@@ -2054,15 +2130,43 @@ Clipping of whole utterance
 
 <p>Acoustics gives us an <strong>indirect idea</strong> of the movements of the articulators</p>
 
-<p>Sometimes, though, we need to look directly at the articulators</p>
+<p>Sometimes, though, we need to look <em>directly at</em> the articulators</p>
 
 <ul>
 
 <li>If there are multiple explanations for acoustics</li>
 
-<li>If the examined sounds are totally unfamiliar or especially unusual</li>
+<li>If the examined sounds are totally unfamiliar or especially unusual
+
+<ul>
 
 <li>In the Bantoid area, this is not uncommon!</li>
+
+</ul></li>
+
+</ul>
+
+</div><div id="articulation-measurement" class="slide section level2">
+
+<h1>Articulation measurement</h1>
+
+<p>We point out here that characterizing and measuring some articulations is <strong>much easier</strong> than usually expected</p>
+
+<ul>
+
+<li>Lip articulation</li>
+
+<li>Palatography</li>
+
+<li>Basically <strong>photography</strong>
+
+<ul>
+
+<li>With whichever resources are on hand</li>
+
+<li>All of my personal examples shown here are shot on a phone camera</li>
+
+</ul></li>
 
 </ul>
 
@@ -2070,87 +2174,145 @@ Clipping of whole utterance
 
 <h1>Lip articulation</h1>
 
-<p>Movement of tongue and lips: lips are easily seen moving</p>
+<p>Lips are easily seen moving since they are on the exterior of the face</p>
 
 <ul>
 
-<li>Mirror at 45 degree angle provides a side view</li>
+<li>Mirror at 45 degree angle provides an additional side view of the lips</li>
 
 </ul>
 
 <p><img src="./assets/media/lip-mirror.png" width="600"></p>
 
-<p>Babanki vowels:</p>
+<p>Example: Babanki lip articulation during vowels <span class="cite">Faytak &amp; Akumbu (2021)</span></p>
 
 <ul>
 
-<li>Spread, unrounded [i]</li>
-
-<li>Compressed</li>
-
-<li>Rounded [u]</li>
+<li>Rounded [u] (right) can be contrasted with labiodental [ʉv] (left) and bilabial compressed [ʉβ] (center)</li>
 
 </ul>
 
-<p><img src="./assets/media/bbk-lip.png" width="800"></p>
+<p><img src="./assets/media/bbk-lip.png" width="900"></p>
 
-</div><div id="examples" class="slide section level2">
+</div><div id="model-use-9" class="slide section level2">
 
-<h1>Examples</h1>
+<h1>Model use</h1>
 
-<p>Lip activity during Medumba [ʉ]: compressed like a bilabial stop, often leading to bilabial trill [ʙ] <span class="cite">Olson &amp; Meynadier (2015)</span></p>
+<p>Lip activity during Medumba [ʉ]: <em>compressed</em> in the direction of a bilabial stop <span class="cite">Olson &amp; Meynadier (2015)</span></p>
 
-<p><img src="./assets/media/kom-palatography.png" width="600"></p>
+<ul>
+
+<li>Relaxed lower lip often leads to bilabial trill [ʙ] during vowel <span class="cite">figure from Olson &amp; Meynadier (2015)</span></li>
+
+<li>Compression vs. rounding totally unexplored for most Bantoid languages with an /ʉ/</li>
+
+</ul>
+
+<p><img src="./assets/media/olson.png" width="600"></p>
+
+<p>Subtle lip posture differences also known to occur on various fricatives and approximants</p>
+
+<ul>
+
+<li>Differences in posture <em>enhance</em> the contrast between labiodental /f, v/ and bilabial fricatives /ɸ, β/ in Ewe, Kwangali, ruGciriku, etc. <span class="cite">Ladefoged (1968, 1990); Utman &amp; Blumstein (1994)</span></li>
+
+<li><span class="cite"></span></li>
+
+</ul>
+
+</div><div id="model-use-10" class="slide section level2">
+
+<h1>Model use</h1>
+
+<p>For faster articulations, short videos can also be useful</p>
+
+<ul>
+
+<li>Video of a Mono speaker producing a labial flap <span class="cite">Olson &amp; Hajek (2004)</span></li>
+
+<li>Word is [àⱱétòɾò] “stick used in animal trap” (video repeats)</li>
+
+</ul>
+
+<iframe width="1264" height="552" src="https://www.youtube.com/embed/3j1i1dVDqgs?rel=0&amp;Version=3&amp;loop=1&amp;playlist=3j1i1dVDqgs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+
+</iframe>
 
 </div><div id="palatographs" class="slide section level2">
 
 <h1>Palatographs</h1>
 
-<p>More complex, but provide information on tongue-palate contact <span class="cite">Anderson (2008)</span></p>
+<p>A “tongue-print” on the roof of the mouth which shows where articulatory activity takes place <span class="cite">Anderson (2008)</span></p>
 
 <ul>
 
-<li>stop and fricative place</li>
+<li>Stop and fricative place</li>
 
-<li>certain aspects of vowel articulation</li>
-
-</ul>
-
-<p>Method</p>
-
-<ul>
-
-<li>paint tongue</li>
-
-<li>one token involving one lingual consonant</li>
-
-<li>open mouth, insert mirror, photograph</li>
+<li>Certain aspects of vowel articulation</li>
 
 </ul>
+
+<p>The method is more involved than simple photography:</p>
+
+<ol style="list-style-type: decimal">
+
+<li>Paint tongue with mixture of oil and dark edible powder (chocolate or charcoal)</li>
+
+<li>Speaker produces a single token of a word with <em>one</em> lingual consonant</li>
+
+<li>Open mouth, insert mirror, photograph</li>
+
+</ol>
 
 <p><img src="./assets/media/palatography-side.png" width="600"></p>
 
-</div><div id="examples-1" class="slide section level2">
+</div><div id="model-use-11" class="slide section level2">
 
-<h1>Examples</h1>
+<h1>Model use</h1>
 
-<p>Kom high vowels (which I will be talking about in my regular talk)</p>
+<audio id="goat" src="./assets/media/kom-goat.wav">
+
+</audio>
+
+<audio id="kola" src="./assets/media/kom-kola.wav">
+
+</audio>
+
+<p>Kom exhibits a contrast between [i] and fronted, fricativized [i̟] (which I will discuss further in my regular talk)</p>
 
 <ul>
 
-<li>Kom iz vs. i</li>
+<li><button onclick="document.getElementById(&#39;kola&#39;).play()">
 
-<li>Audio examples</li>
+[ībi᷇] ‘kola nut’
+
+</button></li>
+
+<li><button onclick="document.getElementById(&#39;goat&#39;).play()">
+
+[ə̄bí̟] ‘goat’
+
+</button></li>
 
 </ul>
 
+<p>Palatography reveals the lingual articulation of these two vowels</p>
+
 <p><img src="./assets/media/kom-palatography.png" width="700"></p>
 
-</div><div id="examples-2" class="slide section level2">
+<ul>
 
-<h1>Examples</h1>
+<li>Contrasts like these are probably quite frequent in the Bantoid area</li>
 
-<p>Excellent evidence of the phonetic basis of a lingual contrast</p>
+<li>Compare the [z͡i] vowels observed in Len Mambila and Limbum <span class="cite">Fransen (1995); Nforgwei (2004); Connell (2007); Lewis &amp; Shittu (2014)</span></li>
+
+</ul>
+
+</div><div id="model-use-12" class="slide section level2">
+
+<h1>Model use</h1>
+
+<p>More canonically used for clear evidence of lingual place contrasts</p>
 
 <ul>
 
@@ -2164,7 +2326,7 @@ Clipping of whole utterance
 
 <h1>Equipment</h1>
 
-<p>Everything that we’ve talked about involves <strong>minimal equipment</strong></p>
+<p>Everything that we’ve talked about in this section involves <strong>minimal equipment</strong></p>
 
 <ul>
 
@@ -2200,23 +2362,27 @@ Clipping of whole utterance
 
 <h1>Figures vs. tabular data</h1>
 
-<p>The value of photographic evidence as a figure should be obvious</p>
+<p>The value of photographic evidence as a figure should be obvious: simply include the image</p>
 
-<p>In exceptional cases, you may measure some physical attribute of articulatory pictures/images and convert that to <strong>tabular data</strong></p>
+<p>If you have larger numbers of images, you might convert these to <strong>tabular data</strong> for further analysis</p>
 
 <ul>
 
-<li>i.e. ratio of lip opening to lip width (or height-height) in pixels</li>
+<li>Measure the size of some physical attribute and enter that into your spreadsheet</li>
 
-<li>lip example/schematic</li>
+<li>For example, measure <em>ratio</em> of lip opening width to lip width in pixels</li>
+
+<li>This normalizes for speaker size and for position (head tilt, here) <span class="cite">figure from Olson &amp; Meynadier (2015)</span></li>
 
 </ul>
+
+<p><img src="./assets/media/olson2.png" width="700"></p>
 
 </div><div id="other-articulations" class="slide section level2">
 
 <h1>Other articulations</h1>
 
-<p>It should be mentioned that certain articulations further back are not discussed here</p>
+<p>It should be mentioned that certain articulations produced further back are not discussed here</p>
 
 <ul>
 
@@ -2228,7 +2394,7 @@ Clipping of whole utterance
 
 </ul>
 
-<p>However, <strong>ultrasound</strong> technology is gradually making it easier to image these articulations <span class="cite">Miller, Namaseb &amp; Iskarous (2007); Hudu (2014)</span></p>
+<p>However, <strong>ultrasound</strong> technology is gradually making it easier to image these articulations <span class="cite">Miller, Gick et al. (2006); Namaseb &amp; Iskarous (2007); Allen, Pulleyblank, &amp; Ajíbóyè (2013); Hudu (2014)</span></p>
 
 <ul>
 
@@ -2288,21 +2454,23 @@ Clipping of whole utterance
 
 </ul>
 
-</div><div id="tabular-data-1" class="slide section level2">
+</div><div id="processing-tabular-data" class="slide section level2">
 
-<h1>Tabular data</h1>
+<h1>Processing tabular data</h1>
 
-<p>Tabular data consisting of many measures needs to be averaged, summarized (mean/standard deviation), or submitted to a statistical model</p>
-
-<p>Averaging and basic statistical models can be done on this data, using Excel’s Data Analysis Tools (need to install)</p>
+<p>Tabular data, of whatever sort, needs to be averaged, summarized (mean/standard deviation), or submitted to a statistical model</p>
 
 <ul>
 
-<li>While Excel <em>works</em>, learning a dedicated statistical program is better in the long run</li>
+<li>Averaging and some basic statistical models can be done using Excel’s Data Analysis Tools (need to install)</li>
+
+<li>While Excel and Google Drive (below) <em>work</em> for basic things, learning a dedicated statistical program is better in the long run</li>
+
+<li>Collaborators may be willing to help</li>
 
 </ul>
 
-<p>picture example?</p>
+<p><img src="./assets/media/gdoc-basic-stats.png" width="700"></p>
 
 </div><div id="statistics" class="slide section level2">
 
@@ -2314,7 +2482,7 @@ Clipping of whole utterance
 
 <li>We acknowledge this is not practical for all attendees, but collaborators can help guide this work</li>
 
-<li>Having nicely formatted tabular data is crucial to this handoff</li>
+<li>Having <em>nicely formatted tabular data</em> is crucial to this handoff</li>
 
 </ul>
 
@@ -2334,11 +2502,11 @@ Clipping of whole utterance
 
 <h1>Statistical power</h1>
 
-<p>Because of the need to model the data, it’s important to have enough <strong>statistical power</strong></p>
+<p>If you plan to model the data, it’s important to have enough <strong>statistical power</strong></p>
 
 <ul>
 
-<li>Need to ensure you have collected numerous repetitions of the phenomenon you’re after</li>
+<li>Need to ensure you have collected numerous <strong>repetitions</strong> of the phenomenon you’re after</li>
 
 <li>Need to ensure that enough <strong>speakers</strong> are recorded (the more the better)
 
@@ -2348,7 +2516,11 @@ Clipping of whole utterance
 
 </ul></li>
 
+<li>We’ve necessarily used very small data sets for this demo: in reality larger numbers are needed</li>
+
 </ul>
+
+<p>For the average phonetics study, good power is obtained at 15-20 speakers (rule of thumb)</p>
 
 </div>
 
@@ -2430,11 +2602,15 @@ Clipping of whole utterance
 
 <p>Akumbu, P. (2019). A featural analysis of mid and downstepped high tone in Babanki. In Clem, E., Jenks, P., &amp; Sande, H., eds., <em>Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics</em>, 3–20. <a href="https://langsci-press.org/catalog/view/192/1150/1590-1">PDF</a></p>
 
+<p>Allen, B., Pulleyblank, D., &amp; Ajíbóyè, Ọ. (2013). Articulatory mapping of Yoruba vowels: an ultrasound study. <em>Phonology</em>, 30(2), 183-210. <a href="https://ir.unilag.edu.ng/handle/123456789/2016">PDF</a></p>
+
 <p>Anderson, V. (2008). Static palatography for language fieldwork. <em>Language Documentation &amp; Conservation</em>, 2(1), 1-27. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/1808">Article</a></p>
 
 <p>Bendjaballah, S. &amp; Le Gac, D. (2021). The acoustics of word-initial and word-internal voiced stops in Somali. <em>Journal of the International Phonetic Association</em>, first view. <a href="https://doi.org/10.1017/S0025100321000281">Abstract</a></p>
 
 <p>Boyer, O., &amp; Zsiga, E. (2013). Phonological devoicing and phonetic voicing in Setswana. In Ọla Orie, Ọ. and Sanders, K., eds., <em>Selected Proceedings of the Annual Conference on African Linguistics</em>, 43, 82-89. <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.657.5153&rep=rep1&type=pdf">PDF</a></p>
+
+<p>Connell, B. (2007). Mambila fricative vowels and Bantu spirantisation. <em>Africana Linguistica</em>, 13(1), 7-31. <a href="https://www.persee.fr/doc/aflin_2033-8732_2007_num_13_1_969">Article</a></p>
 
 <p>Connell, B. (1994). The structure of labial-velar stops. <em>Journal of Phonetics</em>, 22(4), 441-476. <a href="https://doi.org/10.1016/S0095-4470(19)30295-5">Abstract</a></p>
 
@@ -2442,11 +2618,15 @@ Clipping of whole utterance
 
 <p>Faytak, M., &amp; Akumbu, P. W. (2021). Kejom (Babanki). <em>Journal of the International Phonetic Association</em>, 51(2), 333-354. <a href="https://doi.org/10.1017/S0025100319000264">Article</a></p>
 
+<p>Fransen, M. (1995). A Grammar of Limbum: A Grassfields Bantu Language Spoken in the North-West Province of Cameroon. PhD dissertation, Vrije Universitet Amsterdam.</p>
+
 <p>Gahl, S. (2008). <em>Time</em> and <em>Thyme</em> Are not Homophones: The Effect of Lemma Frequency on Word Durations in Spontaneous Speech. <em>Language</em> 84(3), 474-496. <a href="https://doi.org/10.1353/lan.0.0035">Article</a></p>
 
 <p>Ge, C., Xiong, Y., &amp; Mok, P. (2021). How reliable are phonetic data collected remotely? Comparison of recording devices and environments on acoustic measurements. In <em>Proc Interspeech 2021</em>, 1683-1687. <a href="http://ling.cuhk.edu.hk/people/peggy/GeXiongMok_Interspeech2021.pdf">PDF</a></p>
 
 <p>Genzel, S. &amp; Kügler, F. (2011). Phonetic realization of automatic (downdrift) and non-automatic downstep in Akan. <em>Proceedings of ICPhS 17</em>, Hong Kong. <a href="http://icphs2011.hk.lt.cityu.edu.hk/resources/OnlineProceedings/RegularSession/Genzel/Genzel.pdf">PDF</a></p>
+
+<p>Gick, B., Pulleyblank, D., Campbell, F., &amp; Mutaka, N. (2006). Low vowels and transparency in Kinande vowel harmony. <em>Phonology</em>, 23(1), 1-20. <a href="https://www.researchgate.net/profile/Douglas-Pulleyblank/publication/231788585_Low_vowels_and_transparency_in_Kinande_vowel_harmony/links/0deec536d70d2b816c000000/Low-vowels-and-transparency-in-Kinande-vowel-harmony.pdf">PDF</a></p>
 
 <p>Gjersøe, S., Nformi, J., &amp; Paschen, L. (2019). Hybrid falling tones in Limbum. In Clem, E., Jenks, P. &amp; Sande, H., eds., <em>Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics</em>, 95-118. <a href="https://langsci-press.org/catalog/view/192/1484/1595-1">PDF</a></p>
 
@@ -2460,7 +2640,11 @@ Clipping of whole utterance
 
 <p>Koffi, E. (2018). The acoustic vowel space of Anyi in light of the cardinal vowel system and the Dispersion Focalization Theory. In Kandybowicz, J., Major, T., Torrence, H., &amp; Duncan, P., eds., <em>African linguistics on the prairie: Selected papers from the 45th Annual Conference on African Linguistics</em>. <a href="https://langsci-press.org/catalog/view/120/1321/1099-2">PDF</a></p>
 
+<p>Ladefoged, P. (1990). What do we symbolize? Thoughts prompted by bilabial and labiodental fricatives. <em>Journal of the International Phonetic Association</em>, 20(2), 32-36. <a href="https://doi.org/10.1017/S0025100300004254">Abstract</a> <a href="https://escholarship.org/content/qt8j00q68c/qt8j00q68c.pdf#page=11">Preprint PDF</a></p>
+
 <p>Ladefoged, P. (1968). <em>A phonetic study of West African languages: An auditory-instrumental survey.</em> Cambridge University Press.</p>
+
+<p>Lewis, D., &amp; Shittu, S. (2014). Phonemic Status of Len Fricative-Vowels. <em>Ibadan Journal of Humanities Studies</em>, 24, 27-45. <a href="https://d1wqtxts1xzle7.cloudfront.net/58083355/Lewis-Shittu_Fricative-Vowels-with-cover-page-v2.pdf?Expires=1647723825&Signature=Na3aiC4CnjsqrlzOpWavRK62Me6X0qua9u5-rENtVXcw9Kc-dYEeTPz9QdgVH-M7ItxnzH024r4yndu8wHw~p1wY4CrAKFzDx566C~h8N8prQozt8mtuY6nnF4Q7VLO9-bLyRyS-NyELxQpNdqHXIaS2-EZc3GPGTdTgC9NXew~Sy9nx6JZ~EyWZLLRJ0-6Vs-M53Jw35TTD1tJEK7aXx8oQXFcYdes6AvQ5dSBMJ-auwVKYagml3V9IHt1cwHm5aw6G-bb5vfpEgl1o1SoVKxoaOKJjzKU~cv3NU~hP1yFlaY8hrMXIg-pRf~pVLNNlMsQXguo5eSmuzDnonz-KzQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">PDF</a></p>
 
 <p>Lotven, S. &amp; Berkson, K. (2019). The phonetics and phonology of depressor consonants in Gengbe. In Clem, E., Jenks, P. &amp; Sande, H., eds., <em>Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics</em>, 249-268. <a href="https://langsci-press.org/catalog/view/192/1492/1603-1">PDF</a></p>
 
@@ -2480,7 +2664,7 @@ Clipping of whole utterance
 
 <p>Myers, S., Namyalo, S., &amp; Kiriggwajjo, A. (2019). F0 timing and tone contrasts in Luganda. Phonetica, 76(1), 55-81. <a href="https://doi.org/10.1159/000491073">Abstract</a></p>
 
-<p>Nabirye, M., de Schryver, G., &amp; Verhoeven, J. (2016). Lusoga (Lutenga). <em>Journal of the International Phonetic Association</em>, 46(2), 219-228. <a href="https://doi:10.1017/S0025100315000249">Abstract &amp; PDF</a></p>
+<p>Nabirye, M., de Schryver, G., &amp; Verhoeven, J. (2016). Lusoga (Lutenga). <em>Journal of the International Phonetic Association</em>, 46(2), 219-228. <a href="https://doi.org/10.1017/S0025100315000249">Abstract &amp; PDF</a></p>
 
 <p>Nagano-Madsen, Y. &amp; Thornell, C. (2012). Acoustic properties of implosives in Bantu Mpiemo. In Eriksson, A. &amp; Abelin, Å., eds., <em>Proceedings of FONETIK 2012</em>, Gothenburg, 73-76. <a href="
 
@@ -2491,6 +2675,8 @@ http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.397.802&rep=rep1&type=p
 <p>Nakagawa, H. (2008). Aspects of the phonetic and phonological structure of the G|ui language (Doctoral dissertation). <a href="https://core.ac.uk/download/pdf/39664836.pdf">Synopsis</a></p>
 
 <p>Naumann, C. (2016). The phoneme inventory of Taa (West !Xoon dialect). In Vossen, R. &amp; Haacke, W., eds., <em>Lone Tree: Scholarship in Service of the Koon. Essays in memory of Anthony Traill</em>. Köln: Rüdiger Köppe Velag. <a href="https://d1wqtxts1xzle7.cloudfront.net/54707358/Naumann2009PhonemeInventoryTaaMS-with-cover-page-v2.pdf?Expires=1647648067&Signature=Q8aXSTuE9W419Bls~PVVILRHSZ~Ownk82e~1DvLJlVD2Zzp40MBMBjVUJk3Z9Hv00yAAoopFy8LIC0hG~mn2ChPBeJ2EQKtpjK90wvNwyl7AzU2uK1oYhJgNO0BQsH~ZpsW-eibvYlODvm7ADrIRJf~Q9iUopqkmPMFSTV2Ri4DBhxJ9qoSB3LGMkrS3dGRP42biILfDxSqU2H71Yy4Q~~rICVWZaNyKWFBnCc0gEWIbPT3SdY9PqbzB0iCWa8fO-00BGjlw7k0hekGi7Q7swUbYpw0F9USh-DmNkKFRE5Bfz~7Uuw73tFacKra1DR~BsSGJbNgFzXCiktPvJUCa-Q__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">PDF</a></p>
+
+<p>Nforgwei, S. (2004). A study of the phonological and syntactic processes in the standardisation of Limbum. PhD dissertation, Université de Yaoundé. <a href="https://pure.mpg.de/rest/items/item_403491/component/file_403490/content">PDF</a></p>
 
 <p>Olson, K. &amp; Meynadier, Y. (2015) On Medumba bilabial trills and vowels. <em>Proceedings of ICPhS 18</em>, Glasgow. <a href="https://hal.archives-ouvertes.fr/hal-01211220/file/2015_ICPhS_Olson.pdf">PDF</a></p>
 
@@ -2511,6 +2697,8 @@ https://direct.mit.edu/coli/article/46/4/713/97329/Sparse-Transcription">PDF</a>
 <p>Starwalt, C. (2008). The acoustic correlates of ATR harmony in seven-and nine-vowel African languages: A phonetic inquiry into phonological structure. PhD dissertation, The University of Texas at Arlington. <a href="https://www.proquest.com/docview/304842357?pq-origsite=gscholar&fromopenview=true">PDF</a></p>
 
 <p>Traill, A., Khumalo, J., &amp; Fridjhon, P. (1987). Depressing facts about Zulu. <em>African Studies</em> 46(2), 255-274. <a href="https://doi.org/10.1080/00020188708707678">Abstract &amp; PDF</a></p>
+
+<p>Utman, J., &amp; Blumstein, S. (1994). The influence of language on the acoustic properties of phonetic features: A study of the feature [strident] in Ewe and English. <em>Phonetica</em>, 51(4), 221-238. <a href="https://doi.org/10.1159/000261978">Abstract</a></p>
 
 <p>Whalen, D. H., DiCanio, C., &amp; Dockum, R. (2020). Phonetic documentation in three collections: Topics and evolution. <em>Journal of the International Phonetic Association</em>, ##, 1-27. <a href="https://doi.org/10.1017/S0025100320000079">Abstract</a></p>
 
