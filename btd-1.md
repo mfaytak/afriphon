@@ -1,8 +1,6 @@
-% Practical and instrumental phonetics workshop
-% Banto1d, 23 March 2022
-% Universität Hamburg<br/>
-  Matthew Faytak<br/>
-  Katie Franich
+% Workshop on practical and instrumental phonetics 
+% Banto1d, 23 March 2022<br/> Universität Hamburg
+% Matthew Faytak (Univ. at Buffalo)<br/> Katie Franich (Univ. of Delaware)
 
 ## Overview
 
@@ -25,7 +23,7 @@ Part 3:
 * Practical considerations
 * Open discussion period
 
-There will be regular breaks!
+Regular breaks will be interspersed
 
 
 ## About the slides
@@ -49,11 +47,10 @@ The slides are hosted <a href="https://github.com/mfaytak/afriphon">here</a> on 
 Nearly all references mentioned during the workshop are **linked** at the end of the slides
 
 * I have prioritized open-access materials as much as possible
-* I have aimed to include many "model papers" 
+* I have aimed to include many "model papers" which demonstrate use of new concepts
 * Attendees are encouraged to look up these sources at the end and reinforce what they'll learn today
 
-
-# Some assumptions
+# Introduction
 
 ## The situation
 
@@ -78,7 +75,9 @@ We presume that you, the participants, are:
 	* Institutional support is low
 * Familiar with phonetics in theory, but not necessarily in practice
 
-If you are not in this group, we ask that you **prioritize** those in this group for questions and feedback
+If you are not in this group, we ask that you prioritize those in this group for questions and feedback
+
+* Unlike a typical talk, we encourage people to ask questions at the **end of any slide**
 
 
 ## All of us
@@ -93,8 +92,6 @@ Let's assume that we are all committed to:
 * Developing **capacity** for an African phonetics practice
 * Doing these in a way which is adapted to local needs and demands
 
-
-# Why phonetics?
 
 ## Definitions
 
@@ -137,15 +134,15 @@ Phonetic recordings allow better testing of hypotheses about phonological struct
 Even a trained phonetic ear is prone to making occasional mistakes based on **perceptual bias**
 
 * For example: nasal consonant codas are more often misidentified after non-low vowels <span class="cite">Zee (1981)</span>
-
-<img src="./assets/media/zee.png" width="600">
-
 * Transcription mistakes permanently enter the record
+
+<img src="./assets/media/zee.png" width="650">
+
 
 
 ## Precision
 
-Not all contrasts can be easily described by the analyst's ear, especially in the moment 
+Not all contrasts can be easily described by the analyst's ear, and especially transcribed quickly in the moment 
 
 * Fine vowel contrasts (especially central vowels)
 * Diphthongs versus consonant secondary articulation
@@ -166,7 +163,7 @@ Recordings are required for instrumental phonetic work: many incidental benefits
 * Community of scientific researchers may access the data
 	* New analyses
 	* Comparative work
-* Analysis may be replicated
+* Analysis may be replicated later by other researchers (or the same researchers)
 
 
 ## Complementary methods
@@ -219,7 +216,7 @@ Recordings should not contain excessive background noise
 * <button onclick="document.getElementById('noise2').play()">Continuous noise</button> from a fan
 * <button onclick="document.getElementById('scuff').play()">Intermittent noise</button> from touching the microphone
 
-Any noise, however quiet to your ears in the moment, will be much louder in the recording later
+Any noise, however quiet to your ears in the moment, will be *much louder* in the recording later
 
 
 ## How to improve
@@ -269,22 +266,22 @@ If the speaker is too loud and/or too close to the microphone, the device cannot
 How to improve: make test recordings after you position your microphones
 
 * If there is general clipping, microphone needs to be further away or speaker needs to be quieter
-* If stops "pop", position microphone to the side of the mouth
+* If stops "pop", position microphone to the **side** of the mouth
 * **Gain** can often be adjusted if you are using a recorder
 
 
 ## Equipment
 
-Not much equipment required: something to make recordings on
+At the most basic, you only need something to make recordings on. One of the below:
 
-* Laptop computer 
+* Laptop computer with **Praat**
 * Smartphone with recording app
 	* "Awesome Voice Recorder X" (free with ads) is a good app
 	* Others must definitely exist
 * Hand recorder/memo recorder
 * Professional recorder (Zoom H4N, etc)
 
-A way of transferring files off of the device and storing for future analysis:
+A way of transferring files off of the device and backing up for future analysis:
 
 * SD card
 * USB drive or external drive
@@ -302,11 +299,13 @@ External microphones can increase the quality of acoustic data by recording less
 An acoustic baffle can reduce echo
 
 * Soft, fluffy objects: blankets, sofas, etc.
+* The seats of a car
 * This can also be achieved by selecting the recording setting carefully, and using a cardioid microphone
+
 
 ## Other tips
 
-Do not use computer noise reduction/filtering in general
+*Do not use* computer noise reduction/filtering in general
 
 * Go into your computer's sound settings and *turn this off*; make sure apps (i.e. Zoom) don't have separate filters
 * Normal to hear slight "fuzz" in background, or very slight echo
@@ -337,9 +336,9 @@ Download Praat from <a href="https://fon.hum.uva.nl">fon.hum.uva.nl</a> or <a hr
 
 Both the **object window** (shown below) and **picture window** appear when you open Praat (we'll ignore the picture window for now)
 
-Basic issues can often be solved using the manual
+Basic issues can often be solved using the **manual**
 
-<img src="./assets/media/praat-manual.png" width="400"> <img src="./assets/media/praat-manual-search.png" width="400">
+<img src="./assets/media/praat-manual.png" width="500"> <img src="./assets/media/praat-manual-search.png" width="500">
 
 * The manual is also available online <a href="https://www.fon.hum.uva.nl/praat/manual/Manual.html">here</a>
 * Other introductory guides can be found <a href="https://www.fon.hum.uva.nl/praat/manualsByOthers.html">here</a>
@@ -349,7 +348,7 @@ Basic issues can often be solved using the manual
 
 Let's record ourselves saying a "good day, good afternoon" greeting in whichever language you would like
 
-<img src="./assets/media/praat-record-menu.png" width="400"> <img src="./assets/media/praat-record-console.png" width="400">
+<img src="./assets/media/praat-record-menu.png" width="500"> <img src="./assets/media/praat-record-console.png" width="600">
 
 * Make sure you "save to list" before closing the recorder!
 
@@ -421,7 +420,7 @@ We may wish to know where the words and segments are, but we lack useful landmar
 
 * Using the menu as shown below, we'll make a TextGrid for our Babanki sound object
 
-<img src="./assets/media/praat-annotate.png" width="400"> <img src="./assets/media/praat-make-tg.png" width="400">
+<img src="./assets/media/praat-annotate.png" width="500"> <img src="./assets/media/praat-make-tg.png" width="500">
 
 
 ## Interval tiers
@@ -432,7 +431,7 @@ Let's use the **interval tier** "sentence" and use it to transcribe the utteranc
 * Useful for marking off words, utterances, and some vowels and consonants
 * Here, click before the beginning and after the end of the utterance, then type a transcription or translation in the middle
 
-<img src="./assets/media/praat-bbk-interval.png" width="700">
+<img src="./assets/media/praat-bbk-interval.png" width="800">
 
 
 ## Point tiers
@@ -444,18 +443,18 @@ Let's use the **point tier** "stop" to mark off where each [t] release happens
 * Note that *intervals are generally more useful* for most segments
 * Can't click and highlight range like interval tier 
 
-<img src="./assets/media/praat-bbk-point.png" width="700">
+<img src="./assets/media/praat-bbk-point.png" width="800">
 
 
 ## Adding and removing tiers
 
 We might be dissatisfied with how the tone marks are displaying; we could make a new tier for tones (autosegmental style)
 
-<img src="./assets/media/praat-bbk-add.png" width="400"> <img src="./assets/media/praat-bbk-add2.png" width="300">
+<img src="./assets/media/praat-bbk-add.png" width="600"> <img src="./assets/media/praat-bbk-add2.png" width="400">
 
 Amending the TextGrid using the new tier:
 
-<img src="./assets/media/praat-bbk-add3.png" width="700">
+<img src="./assets/media/praat-bbk-add3.png" width="800">
 
 
 ## Saving TextGrids
@@ -468,7 +467,7 @@ Using CTRL+S or the menu shown below, you must *save* your TextGrid when you are
 <img src="./assets/media/praat-tg-save.png" width="700">
 
 
-# Reading our data
+# Reading and interpreting data
 
 ## Data displays
 
@@ -477,7 +476,7 @@ We may wish to provide further details in our TextGrids, but we encounter anothe
 * Praat shows **waveforms** and **spectrograms**
 * Note the simpler TextGrid (segments, tones); **bbk-hills-of-bushes.TextGrid** in downloaded files
 
-<img src="./assets/media/praat-bbk-datatypes.png" width="700">
+<img src="./assets/media/praat-bbk-datatypes.png" width="800">
 
 
 ## Waveforms
@@ -487,14 +486,14 @@ We may wish to provide further details in our TextGrids, but we encounter anothe
 * We expect any **voiced** speech signal to *oscillate* because the vocal folds open and close in a repeating pattern
 * Other **voiceless** sounds show no movement away from "zero line" and no clear oscillation
 
-<img src="./assets/media/praat-bbk-periodicity.png" width="700">
+<img src="./assets/media/praat-bbk-periodicity.png" width="800">
 
 
 ## Sonority
 
 Sounds produced with a more open mouth are *louder* and  more sonorous <span class="cite">Parker (2008) </span>; these are *thicker* on the waveform
 
-<img src="./assets/media/praat-bbk-sonority.png" width="700">
+<img src="./assets/media/praat-bbk-sonority.png" width="800">
 
 
 
@@ -508,11 +507,11 @@ Spectrograms are three-dimensional, and show time vs. **frequency** vs. sound pr
 
 * The darker the spectrogram (and the thicker the waveform), the more sound pressure there is
 
-<img src="./assets/media/praat-bbk-spectro0.png" width="700">
+<img src="./assets/media/praat-bbk-spectro0.png" width="800">
 
 * Think of it as an elevation map (Mt. Cameroon pictured)
 
-<img src="./assets/media/relief-map.png" width="400">
+<img src="./assets/media/relief-map.png" width="500">
 
 
 ## Interpreting spectrograms
@@ -522,7 +521,7 @@ Spectrograms are three-dimensional, and show time vs. **frequency** vs. sound pr
 * Voicing is visible as vertical stripes in vowels, and as a small "bar" at bottom
 * **Formants** are clear horizontal bands above the voicing bar
 
-<img src="./assets/media/praat-bbk-spectro1.png" width="700">
+<img src="./assets/media/praat-bbk-spectro1.png" width="800">
 
 
 ## Interpreting spectrograms
@@ -532,7 +531,7 @@ Spectrograms are three-dimensional, and show time vs. **frequency** vs. sound pr
 * Due to the opening of the velum: nasal cavity "muffles" the sound
 * Much like soft objects in a room muffle echo
 
-<img src="./assets/media/praat-bbk-spectro2.png" width="700">
+<img src="./assets/media/praat-bbk-spectro2.png" width="800">
 
 
 ## Interpreting spectrograms
@@ -543,32 +542,32 @@ Spectrograms are three-dimensional, and show time vs. **frequency** vs. sound pr
 * The further back the fricative, the lower the average frequency
 * Compare [s] and [ʒ]: [s] is further front, has higher frequency, sits higher on spectrogram
 
-<img src="./assets/media/praat-fricative1.png" width="700">
+<img src="./assets/media/praat-fricative1.png" width="800">
 
-<img src="./assets/media/praat-fricative2.png" width="700">
+<img src="./assets/media/praat-fricative2.png" width="800">
 
 
 ## Interpreting spectrograms
 
 **Stops** show an absence of (most) energy followed by a **burst** across the whole spectrum
 
-<img src="./assets/media/praat-bbk-stop1.png" width="700">
+<img src="./assets/media/praat-bbk-stop1.png" width="800">
 
 **Affricates** look similar, but as if they were followed by a fricative
 
 * From Babanki [kə̀dʒóm] 'Babanki' <span class="cite">Faytak & Akumbu (2021)</span>
 
-<img src="./assets/media/praat-bbk-stop2.png" width="700">
+<img src="./assets/media/praat-bbk-stop2.png" width="800">
 
 
 ## Prenasalized segments
 
 Prenasalized stops and affricates often have a *long nasal closure* followed by a *short oral closure* which we can see clearly in the spectrogram
 
-* Note the "smudged" energy goes away when oral closure begins in [ⁿpfʲ] below
+* Note that most of the spectrogram energy goes away when oral closure begins in [ⁿpfʲ] below
 * From Babanki [kə̀ⁿpfʲɨ́ŋ] 'owl' <span class="cite">Faytak & Akumbu (2021)</span>
 
-<img src="./assets/media/praat-bbk-stop3.png" width="700">
+<img src="./assets/media/praat-bbk-stop3.png" width="800">
 
 
 # Drawing figures
@@ -591,7 +590,7 @@ Waveforms and spectrograms can be "drawn" or "painted" (respectively) in the **p
 * This also opened when you open Praat; we'll stop ignoring it now
 * The blue rectangle indicates the *plot area* where the figure will be drawn: change size by clicking and dragging as needed
 
-<img src="./assets/media/praat-picture.png" width="600">
+<img src="./assets/media/praat-picture.png" width="700">
 
 
 ## Drawing a waveform
@@ -600,12 +599,12 @@ Waveforms and spectrograms can be "drawn" or "painted" (respectively) in the **p
 
 * Select a Sound to draw its waveform
 
-<img src="./assets/media/praat-bbk-draw.png" width="400">
-<img src="./assets/media/praat-draw-options.png" width="500">
+<img src="./assets/media/praat-bbk-draw.png" width="500">
+<img src="./assets/media/praat-draw-options.png" width="600">
 
 The result: a waveform drawn within the plot area
 
-<img src="./assets/media/praat-drawn.png" width="600">
+<img src="./assets/media/praat-drawn.png" width="700">
 
 
 ## Drawing a TextGrid
@@ -633,17 +632,17 @@ A Sound and TextGrid can be drawn together very easily: simply **select both** a
 * Select Sound and click "View and Edit"
 * Select from the Spectrum menu "Extract visible spectrogram"
 
-<img src="./assets/media/praat-extract-spec.png" width="700">
+<img src="./assets/media/praat-extract-spec.png" width="800">
 
 
 ## Painting a spectrogram
 
 This sends a Spectrogram object to the object list; when we select this we get a "Paint" option under Draw
 
-<img src="./assets/media/praat-bbk-paint.png" width="400">
-<img src="./assets/media/praat-paint-options.png" width="500">
+<img src="./assets/media/praat-bbk-paint.png" width="500">
+<img src="./assets/media/praat-paint-options.png" width="600">
 
-The result: as expected, but a bit too tall for its width (make plot area wider/shorter)
+The result: as expected, but a bit too tall for its width (we might make the plot area wider/shorter)
 
 <img src="./assets/media/praat-painted.png" width="700">
 
@@ -655,23 +654,23 @@ Drawing a spectrogram and a TextGrid at the same time is a bit more complicated
 1. Paint the spectrogram, but **uncheck "Garnish"**
 2. Add the Y axis marks using the "Margins" menu
 
-<img src="./assets/media/praat-marksleft.png" width="400"> <img src="./assets/media/praat-yaxis.png" width="400">
+<img src="./assets/media/praat-marksleft.png" width="500"> <img src="./assets/media/praat-yaxis.png" width="600">
 
 3. Add a Y axis label, usually "Frequency (Hz)"
 * I've also added a box around the plot here with "Margins" > "Draw Inner Box"
 
-<img src="./assets/media/praat-textleft.png" width="400"> <img src="./assets/media/praat-axistext.png" width="400">
+<img src="./assets/media/praat-textleft.png" width="500"> <img src="./assets/media/praat-axistext.png" width="600">
 
 
 ## Spectrograms and TextGrids
 
 3. **Resize** plot area to be  taller than spectrogram (pictured), and Draw the TextGrid
 
-<img src="./assets/media/praat-pretg.png" width="600">
+<img src="./assets/media/praat-pretg.png" width="700">
 
 The result: TextGrid annotations on top of the spectrogram
 
-<img src="./assets/media/praat-painted-tg.png" width="600">
+<img src="./assets/media/praat-painted-tg.png" width="700">
 
 
 ## Saving
@@ -680,7 +679,7 @@ As with everything else in Praat, you must **save** before closing the picture w
 
 * If you don't keep the plot area in the same place (covering your figure or margins), you won't save the entire figure
 
-<img src="./assets/media/praat-save-picture.png" width="600">
+<img src="./assets/media/praat-save-picture.png" width="700">
 
 # BREAK
 
@@ -726,14 +725,14 @@ One of the simplest measures: **duration** of segments or words
 	* Displayed in viewing window when you select an interval
 	* If you use the "Query" menu, a text box appears which you can copy-paste the value from
 
-<img src="./assets/media/praat-bbk-duration.png" width="700">
+<img src="./assets/media/praat-bbk-duration.png" width="900">
 
 
 ## Model use
 
 An example from Babanki (**bbk-prenas.wav**): proportion of prenasalized consonants which is nasal <span class="cite">Faytak & Akumbu (2021)</span>
 
-<img src="./assets/media/praat-bbk-duration2.png" width="700">
+<img src="./assets/media/praat-bbk-duration2.png" width="900">
 
 * Not uncommon for continuants to stop up when prenasalized, e.g. /ⁿz/ > [ndz]
 * But /ⁿz/ and /ⁿdz/ (etc.) are contrastive in Babanki
@@ -755,14 +754,16 @@ Other phenomena studied with duration (not exhaustive):
 
 ## Pitch (fundamental frequency, f0)
 
-Pitch (and all other measurements we'll talk about) have a dedicated **menu** 
+Pitch (and all other measurements which we'll discuss) have a dedicated **menu** 
 
 * Turn on "show pitch" to use all other options
 * **f0 track** appears over spectrogram (below) when "showing"
 
-<img src="./assets/media/praat-pitch-menu.png" width="700">
+<img src="./assets/media/praat-pitch-menu.png" width="900">
 
-<img src="./assets/media/praat-bbk-pitch.png" width="700">
+Resulting pitch track:
+
+<img src="./assets/media/praat-bbk-pitch.png" width="900">
 
 
 ## Pitch settings
@@ -773,7 +774,7 @@ Pitch (and all other measurements we'll talk about) have a dedicated **menu**
 * Below, the low-falling tone has a fake jump, well above H for this speaker!
 * From our prior knowledge of the language we should **overrule** Praat
 
-<img src="./assets/media/bbk-grass-beetle.png" width="700">
+<img src="./assets/media/bbk-grass-beetle.png" width="800">
 
 
 ## Pitch settings
@@ -787,7 +788,7 @@ A quick change to pitch range fixes the jump issue
 
 * This handles the low tones better
 
-<img src="./assets/media/praat-bbk-fixed-pitch.png" width="700">
+<img src="./assets/media/praat-bbk-fixed-pitch.png" width="800">
 
 * If jumps don't go away, the "Advanced pitch settings..." window offers some options
 
@@ -805,11 +806,10 @@ All tonal phenomena involve f0
 
 Babanki example in <button onclick="document.getElementById('schwa').play()"> bbk-schwa.wav</button>: 
 
-* Prefixal L ( və̀-lɨ́m "males") behave differently from stem L (bə̀lâŋ "plank") when between two Hs
-	* Third word is bə́lə̀ŋ "groundnut"
+* Prefixal L ( və̀-lɨ́m "males") behave differently from stem L (bə̀lâŋ "plank") when between two Hs; third word is bə́lə̀ŋ "groundnut"
 * HL(prefix)H raises to mid: HM(prefix)H <span class="cite">Akumbu (2019)</span>
 
-<img src="./assets/media/praat-bbk-mid.png" width="700">
+<img src="./assets/media/praat-bbk-mid.png" width="900">
 
 
 ## Model use
@@ -821,7 +821,7 @@ Sub-phonemic effects of intonation on tonemes can be examined <span class="cite"
 * Boundary tones (%) indicate sentence type
 * Effect of L% on lexical H in <button onclick="document.getElementById('aboro').play()"> the example below</button>
 
-<img src="./assets/media/rialland-aborobongui.png" width="700">
+<img src="./assets/media/rialland-aborobongui.png" width="800">
 
 Other tone topics (not exhaustive): 
 
@@ -836,12 +836,12 @@ A measure of **loudness**, measured in decibels (dB)
 
 * Intensity menu and settings are exactly parallel to Pitch menu and settings
 
-<img src="./assets/media/praat-intensity-menu.png" width="700">
+<img src="./assets/media/praat-intensity-menu.png" width="900">
 
 * The yellow intensity track can be hard to spot
 * Higher parts of track match darker parts of spectrogram and thicker parts of waveform
 
-<img src="./assets/media/praat-bbk-intensity.png" width="700">
+<img src="./assets/media/praat-bbk-intensity.png" width="900">
 
 
 ## Model use
@@ -855,7 +855,7 @@ Babanki example: stressed (stems) and unstressed (prefixes) don't seem to be dif
 
 * But stem H has a longer duration
 
-<img src="./assets/media/praat-bbk-intensity2.png" width="800">
+<img src="./assets/media/praat-bbk-intensity2.png" width="1000">
 
 
 ## Model use
@@ -864,9 +864,9 @@ Implosive vs. non-implosive voiced stops have different intensity profiles <span
 
 * See also <span class="cite">Naidoo (2012)</span>
 
-<img src="./assets/media/nagano.png" width="600">
+<img src="./assets/media/nagano.png" width="700">
 
-Numerous other uses in prosody
+* Numerous other uses in prosody
 
 
 ## f0 and intensity figures
@@ -899,7 +899,7 @@ Turn on "show formants", and formant tracks for the first three formants (F1, F2
 * F2 inversely relates to backness (higher F2 = fronter vowel)
 * F3 inversely relates to retroflexion (low F3 = more retroflexion) and other qualities
 
-<img src="./assets/media/praat-bbk-formants.png" width="700">
+<img src="./assets/media/praat-bbk-formants.png" width="900">
 
 
 ## Formant settings
@@ -913,18 +913,18 @@ The default settings work well for **higher-pitched voices**
 
 * Lower-pitched voices need **fewer formants** and a **lower maximum frequency**
 
-<img src="./assets/media/praat-formant-settings.png" width="700">
+<img src="./assets/media/praat-formant-settings.png" width="800">
 
 
 ## Formant tracking
 
 The default settings of 5 formants in 5500 Hz (for higher-pitched voices) don't work well for the very low-pitched voice of the Babanki speaker:
 
-<img src="./assets/media/praat-bbk-poor-track.png" width="700">
+<img src="./assets/media/praat-bbk-poor-track.png" width="900">
 
 Better: changed to 4.5 formants, 4200 Hz; much lower frequency range
 
-<img src="./assets/media/praat-bbk-formants.png" width="700">
+<img src="./assets/media/praat-bbk-formants.png" width="900">
 
 
 ## Formant figures
@@ -935,7 +935,7 @@ Formant tracks work best in a plot of F1 against F2 (which is quite hard to make
 * Much like we did for the spectrogram + TextGrid combination
 * "Speckle" under "Draw" produces this from an extracted Formant object
 
-<img src="./assets/media/praat-draw-speckle.png" width="700">
+<img src="./assets/media/praat-draw-speckle.png" width="1000">
 
 
 ## F1-F2 scatterplots
@@ -947,7 +947,7 @@ F1-F2 scatterplots have F2 on the $x$ axis, F1 on the $y$ axis, with both axes *
 * Can only use these four point types: x + o .
 * Limited ability to label or make legends
 
-<img src="./assets/media/praat-scatterplot.png" width="700">
+<img src="./assets/media/praat-scatterplot.png" width="1000">
 
 
 ## Model use 
@@ -955,12 +955,9 @@ F1-F2 scatterplots have F2 on the $x$ axis, F1 on the $y$ axis, with both axes *
 Better scatterplot figures can be made using tabular data (we'll discuss later) <span class="cite">figure from Faytak & Akumbu (2021)</span>
 
 * Here, ellipses indicate where each cloud of points is centered
-
-<img src="./assets/media/faytak-akumbu-f1f2.png" width="500">
-
 * With this plot it becomes clear why we reverse the axes: vowel space resembles the IPA vowel trapezoid
 
-<img src="./assets/media/ipa-chart.png" width="500">
+<img src="./assets/media/faytak-akumbu-f1f2.png" width="500"> <img src="./assets/media/ipa-chart.png" width="500">
 
 
 ## Model use 
@@ -969,14 +966,12 @@ Formant data is useful in figuring out **harmony systems**; ATR or otherwise
 
 * Dagbani right-to-left ATR harmony also affects the low vowel /a/, counter to previous descriptions <span class="cite">figure from Hudu (2016)</span> 
 
-<img src="./assets/media/hudu-2013.png" width="600">
+<img src="./assets/media/hudu-2013.png" width="700">
 
 * Moro's height harmony system may condition 'high' and 'low' /ə/, previously thought to be transparent to harmony <span class="cite">Ritchart & Rose (2015)</span>
 * Note presentation of data in a **table** in addition to a scatterplot
 
-<img src="./assets/media/ritchart1.png" width="600"> 
-
-<img src="./assets/media/ritchart2.png" width="600">
+<img src="./assets/media/ritchart1.png" width="500"> <img src="./assets/media/ritchart2.png" width="600">
 
 Other uses for formant measures (non-exhaustive):
 
@@ -993,11 +988,11 @@ Praat also detects measures relating to **voicing**: these are grouped under the
 
 The Pulses menu contains the same "showing", measure-getting, and drawing functions as other menus
 
-<img src="./assets/media/praat-pulse-menu.png" width="700">
+<img src="./assets/media/praat-pulse-menu.png" width="900">
 
-The result: each detected "voice pulse", shown over waveform
+The result: each detected "voice pulse", shown over waveform (not spectrogram)
 
-<img src="./assets/media/praat-bbk-pulses.png" width="700">
+<img src="./assets/media/praat-bbk-pulses.png" width="900">
 
 
 ## Display pulses
@@ -1007,7 +1002,7 @@ The pulses themselves can be plotted with a TextGrid like any other similar obje
 * Shaded areas indicate area where voice pulses occur repeatedly
 * Functions like a "voicing detector"
 
-<img src="./assets/media/praat-drawn-pulses.png" width="700">
+<img src="./assets/media/praat-drawn-pulses.png" width="1000">
 
 
 ## Voicing report
@@ -1023,7 +1018,7 @@ If voicing has a predictable timing but varies in extent, the **voicing report**
 
 Voicing in unexpected places is common for labial-velars; this can be confirmed by looking for pulses <span class="cite">figure from Connell (1994)</span>
 
-<img src="./assets/media/connell-1994.png" width="600">
+<img src="./assets/media/connell-1994.png" width="700">
 
 Other voicing-related topics:
 
@@ -1068,11 +1063,11 @@ We'll use **duration** to demonstrate the most basic spreadsheet construction
 3. Copy-paste output into spreadsheet
 4. Add metadata
 
-<img src="./assets/media/praat-get-duration.png" width="500"> <img src="./assets/media/praat-duration-output.png" width="350"> 
+<img src="./assets/media/praat-get-duration.png" width="600"> <img src="./assets/media/praat-duration-output.png" width="500"> 
 
 Repeat this process for each of your observations, starting a **new row** each time
 
-<img src="./assets/media/gdocs-paste-cell.png" width="600">
+<img src="./assets/media/gdocs-paste-cell.png" width="700">
 
 
 ## Praat text output
@@ -1089,7 +1084,7 @@ For any measure other than duration, menus behave slightly differently depending
 
 A shortcut exists to get the **midpoint** of any interval
 
-<img src="./assets/media/praat-midpoint-select.png" width="700">
+<img src="./assets/media/praat-midpoint-select.png" width="1000">
 
 
 ## "Get..." versus "Listing..."
@@ -1117,7 +1112,7 @@ Exceptions:
 
 Mean, max, and min f0 measures (from "Get...") can be copy-pasted into their own cell just like our duration example
 
-<img src="./assets/media/praat-pitch-point-output.png" width="500">
+<img src="./assets/media/praat-pitch-point-output.png" width="700">
 
 Listings (f0 over time) are trickier to paste:
 
@@ -1144,11 +1139,11 @@ Continued:
 3. Paste into spreadsheet
 4. In paste menu, split columns using "Custom"; use *two* spaces (  )
 
-<img src="./assets/media/gdocs-pitch-paste.png" width="700">
+<img src="./assets/media/gdocs-pitch-paste.png" width="900">
 
 5. Fill in metadata
 
-<img src="./assets/media/gdocs-pitch-meta.png" width="700">
+<img src="./assets/media/gdocs-pitch-meta.png" width="900">
 
 
 ## Times for listings
@@ -1165,18 +1160,18 @@ The best way to do this:
 3. Calculate *percent of total duration* by dividing $index$ / $total$ and adding this to a third column $norm$
 4. Be sure to include --undefined-- values as empty cells
 
-<img src="./assets/media/gdocs-pitch-all.png" width="700">
+<img src="./assets/media/gdocs-pitch-all.png" width="900">
 
 
 ## Data construction: formant listing
 
 Same as pitch listing, but note there are four columns for F1-F4, plus one for times
 
-Much as above, but with more measurement columns:
+Much like above, but with more measurement columns:
 
-<img src="./assets/media/gdocs-formant-paste.png" width="700">
+<img src="./assets/media/gdocs-formant-paste.png" width="900">
 
-<img src="./assets/media/gdocs-formant-all.png" width="700">
+<img src="./assets/media/gdocs-formant-all.png" width="900">
 
 
 ## Value of listings
@@ -1187,7 +1182,7 @@ Working with listings is more difficult than working with mean measures, but hav
 * These exert lowering effects and create phonetic contour tones <span class="cite">figure from Gjersøe, Nformi, & Paschen (2019)</span>
 * Plots contain **average** pitch tracks for 300-400 sentence readings, 3 speakers
 
-<img src="./assets/media/gjersoe-nformi.png" width="700">
+<img src="./assets/media/gjersoe-nformi.png" width="800">
 
 
 ## Coding
@@ -1234,13 +1229,13 @@ Lips are easily seen moving since they are on the exterior of the face
 
 * Mirror at 45 degree angle provides an additional side view of the lips
 
-<img src="./assets/media/lip-mirror.png" width="600">
+<img src="./assets/media/lip-mirror.png" width="700">
 
 Example: Babanki lip articulation during vowels <span class="cite">Faytak & Akumbu (2021)</span>
 
 * Rounded [u] (right) can be contrasted with labiodental [ʉv] (left) and bilabial compressed [ʉβ] (center)
 
-<img src="./assets/media/bbk-lip.png" width="900">
+<img src="./assets/media/bbk-lip.png" width="1000">
 
 
 ## Model use
@@ -1250,7 +1245,7 @@ Lip activity during Medumba [ʉ]: *compressed* in the direction of a bilabial st
 * Relaxed lower lip often leads to bilabial trill [ʙ] during vowel <span class="cite">figure from Olson & Meynadier (2015)</span>
 * Compression vs. rounding totally unexplored for most Bantoid languages with an /ʉ/
 
-<img src="./assets/media/olson.png" width="600">
+<img src="./assets/media/olson.png" width="800">
 
 Subtle lip posture differences also known to occur on various fricatives and approximants
 
@@ -1281,7 +1276,7 @@ The method is more involved than simple photography:
 2. Speaker produces a single token of a word with *one* lingual consonant
 3. Open mouth, insert mirror, photograph
 
-<img src="./assets/media/palatography-side.png" width="600">
+<img src="./assets/media/palatography-side.png" width="700">
 
 
 ## Model use
@@ -1290,12 +1285,12 @@ The method is more involved than simple photography:
 
 <audio id="kola" src="./assets/media/kom-kola.wav"></audio>
 
-Kom exhibits a contrast between [i] and fronted, fricativized [i̟] (which I will discuss further in my regular talk)
+Kom exhibits a contrast between two vowels which I will discuss further in my regular talk
 
-* <button onclick="document.getElementById('kola').play()">[ībi᷇] 'kola nut'</button>
-* <button onclick="document.getElementById('goat').play()">[ə̄bí̟] 'goat'</button>
+* Regular [i], as in <button onclick="document.getElementById('kola').play()"> [ībi᷇] 'kola nut'</button>
+* Fronted, fricativized [i̟], as in <button onclick="document.getElementById('goat').play()"> [ə̄bí̟] 'goat'</button>
 
-Palatography reveals the lingual articulation of these two vowels
+Palatography reveals aspects of the lingual articulation of these two vowels
 
 <img src="./assets/media/kom-palatography.png" width="700">
 
@@ -1309,7 +1304,7 @@ More canonically used for clear evidence of lingual place contrasts
 
 * Dental vs. (post)alveolar stop contrast in Lusoga <span class="cite">Nabirye, de Schryver, & Verhoeven (2016)</span>
 
-<img src="./assets/media/nabirye.png" width="700">
+<img src="./assets/media/nabirye.png" width="800">
 
 
 ## Equipment
@@ -1392,7 +1387,7 @@ Tabular data, of whatever sort, needs to be averaged, summarized (mean/standard 
 * While Excel and Google Drive (below) *work* for basic things, learning a dedicated statistical program is better in the long run
 * Collaborators may be willing to help
 
-<img src="./assets/media/gdoc-basic-stats.png" width="700">
+<img src="./assets/media/gdoc-basic-stats.png" width="800">
 
 
 ## Statistics
@@ -1442,17 +1437,18 @@ What remains to be seen:
 
 ## An audit
 
-In compiling these slides and the references they contain, I reflected upon:
+In compiling these slides and the references they contain (as many papers which present *phonetic evidence in African languages* as possible), I reflected upon:
 
 * The current state of the phonetics literature for African languages
 * Who writes that literature
 * Who is cited here 
 
-It is clear that African linguists are under-represented at every level, regardless of how you define "African linguist"
+In the references provided here, it is clear that African linguists are underrepresented, regardless of how "African linguist" is defined
 
-figure showing count of first/any authors of African extraction/birth
+* By extraction or by university affiliation
+* Regardless of author position (first or other)
 
-figure showing count of first/any authors of African *affiliation*
+<img src="./assets/media/audit.png" width="700">
 
 
 ## Open discussion
@@ -1469,9 +1465,9 @@ Some potential topics for discussion:
 
 Akumbu, P. (2019). A featural analysis of mid and downstepped high tone in Babanki. In Clem, E., Jenks, P., & Sande, H., eds., *Theory and description in African linguistics: Selected papers from the 47th Annual Conference on African Linguistics*, 3–20. <a href="https://langsci-press.org/catalog/view/192/1150/1590-1">PDF</a>
 
-Allen, B., Pulleyblank, D., & Ajíbóyè, Ọ. (2013). Articulatory mapping of Yoruba vowels: an ultrasound study. *Phonology*, 30(2), 183-210. <a href="https://ir.unilag.edu.ng/handle/123456789/2016">PDF</a>
+Allen, B., Pulleyblank, D., & Ajíbóyè, Ọ. (2013). Articulatory mapping of Yoruba vowels: an ultrasound study. *Phonology*, 30(2), 183-210. <a href="https://ir.unilag.edu.ng/handle/123456789/2016">Abstract & PDF</a>
 
-Anderson, V. (2008). Static palatography for language fieldwork. *Language Documentation & Conservation*, 2(1), 1-27. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/1808">Article</a>
+Anderson, V. (2008). Static palatography for language fieldwork. *Language Documentation & Conservation*, 2(1), 1-27. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/1808">PDF</a>
 
 Bendjaballah, S. & Le Gac, D. (2021). The acoustics of word-initial and word-internal voiced stops in Somali. *Journal of the International Phonetic Association*, first view. <a href="https://doi.org/10.1017/S0025100321000281">Abstract</a>
 
@@ -1488,7 +1484,7 @@ Faytak, M., & Akumbu, P. W. (2021). Kejom (Babanki). *Journal of the Internation
 
 Fransen, M. (1995). A Grammar of Limbum: A Grassfields Bantu Language Spoken in the North-West Province of Cameroon. PhD dissertation, Vrije Universitet Amsterdam.
 
-Gahl, S. (2008). *Time* and *Thyme* Are not Homophones: The Effect of Lemma Frequency on Word Durations in Spontaneous Speech. *Language* 84(3), 474-496. <a href="https://doi.org/10.1353/lan.0.0035">Article</a>
+Gahl, S. (2008). *Time* and *Thyme* Are not Homophones: The Effect of Lemma Frequency on Word Durations in Spontaneous Speech. *Language* 84(3), 474-496. <a href="https://doi.org/10.1353/lan.0.0035">Abstract</a>
 
 Ge, C., Xiong, Y., & Mok, P. (2021). How reliable are phonetic data collected remotely? Comparison of recording devices and environments on acoustic measurements. In *Proc Interspeech 2021*, 1683-1687. <a href="http://ling.cuhk.edu.hk/people/peggy/GeXiongMok_Interspeech2021.pdf">PDF</a>
 
@@ -1504,12 +1500,12 @@ Hudu, F. (2014). [ATR] feature involves a distinct tongue root articulation: Evi
 
 Hudu, F. (2016). A phonetic inquiry into Dagbani vowel neutralisations. *Journal of African Languages and Linguistics*, (37)1, 59-89. <a href="https://doi.org/10.1515/jall-2016-0002">Abstract</a>
 
-Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">Article</a>
+Hyman, L. (2014). How to study a tone language. *Language Documentation & Conservation*, 8, 525-562. <a href="https://scholarspace.manoa.hawaii.edu/handle/10125/24624">PDF</a>
 
 Koffi, E. (2018). The acoustic vowel space of Anyi in light of the cardinal vowel system and
 the Dispersion Focalization Theory. In Kandybowicz, J., Major, T., Torrence, H., & Duncan, P., eds., *African linguistics on the prairie: Selected papers from the 45th Annual Conference on African Linguistics*. <a href="https://langsci-press.org/catalog/view/120/1321/1099-2">PDF</a>
 
-Ladefoged, P. (1990). What do we symbolize? Thoughts prompted by bilabial and labiodental fricatives. *Journal of the International Phonetic Association*, 20(2), 32-36. <a href="https://doi.org/10.1017/S0025100300004254">Abstract</a> <a href="https://escholarship.org/content/qt8j00q68c/qt8j00q68c.pdf#page=11">Preprint PDF</a>
+Ladefoged, P. (1990). What do we symbolize? Thoughts prompted by bilabial and labiodental fricatives. *Journal of the International Phonetic Association*, 20(2), 32-36. <a href="https://doi.org/10.1017/S0025100300004254">Abstract</a> &nbsp;&nbsp;&nbsp; <a href="https://escholarship.org/content/qt8j00q68c/qt8j00q68c.pdf#page=11">Preprint PDF</a>
 
 Ladefoged, P. (1968). *A phonetic study of West African languages: An auditory-instrumental survey.* Cambridge University Press. 
 
@@ -1517,7 +1513,7 @@ Lewis, D., & Shittu, S. (2014). Phonemic Status of Len Fricative-Vowels. *Ibadan
 
 Lotven, S. & Berkson, K. (2019). The phonetics and phonology of depressor consonants in Gengbe. In Clem, E., Jenks, P. & Sande, H., eds., *Theory and Description in African Linguistics: Selected Papers from the 47th Annual Conference on African Linguistics*, 249-268. <a href="https://langsci-press.org/catalog/view/192/1492/1603-1">PDF</a>
 
-Maddieson, I. & Sands, B. (2019). The sounds of the Bantu languages. In Van de Velde, M., Bostoen, K., Nurse, D., & Philippson, G., eds., *The Bantu Languages: Second Edition*, 79-127. Routledge. <a href="https://www.researchgate.net/profile/Bonny-Sands/publication/323369007_The_sounds_of_the_Bantu_languages/links/5a906c28aca2721405622bfb/The-sounds-of-the-Bantu-languages.pdf">Preprint</a>
+Maddieson, I. & Sands, B. (2019). The sounds of the Bantu languages. In Van de Velde, M., Bostoen, K., Nurse, D., & Philippson, G., eds., *The Bantu Languages: Second Edition*, 79-127. Routledge. <a href="https://www.researchgate.net/profile/Bonny-Sands/publication/323369007_The_sounds_of_the_Bantu_languages/links/5a906c28aca2721405622bfb/The-sounds-of-the-Bantu-languages.pdf">Preprint PDF</a>
 
 Mathes, T. & Chebanne, A. (2018). High tone lowering and raising in Tsua. *Stellenbosch Papers in Linguistics Plus*, 54, 1-16. <a href="https://www.ajol.info/index.php/splp/article/view/184478">Abstract & PDF</a>
 
@@ -1552,9 +1548,8 @@ Oppong, O. (2021). Pitch reset in Asante Twi, a dialect of Akan. MA Thesis, Univ
 
 Parker, S. (2008). Sound level protrusions as physical correlates of sonority. *Journal of Phonetics*, 36(1), 55-90. <a href="https://doi.org/10.1016/j.wocn.2007.09.003">Abstract</a>
 
-Rialland, A. & Aborobongui, M. (2016). How intonations interact with tones in Embosi (Bantu C25), a two-tone language without downdrift. In Downing, L. & Rialland, A., eds., *Intonation in African tone languages* 195-xxx. Berlin: Mouton de Gruyter. <a href="https://doi.org/10.1515/9783110503524-007">DOI</a>
-<a href="
-https://direct.mit.edu/coli/article/46/4/713/97329/Sparse-Transcription">PDF</a>
+Rialland, A. & Aborobongui, M. (2016). How intonations interact with tones in Embosi (Bantu C25), a two-tone language without downdrift. In Downing, L. & Rialland, A., eds., *Intonation in African tone languages* 195-xxx. Berlin: Mouton de Gruyter. <a href="https://doi.org/10.1515/9783110503524-007">Abstract</a>
+&nbsp;&nbsp;&nbsp; <a href="https://sail.usc.edu/~lgoldste/ArtPhon/Papers/Embosi.pdf">PDF</a>
 
 Ritchart, A. & Rose, S. (2015). Schwas in Moro Vowel Harmony. In Kramer, R., Zsiga, E., & Tlale Boyer, O., eds., *Selected Proceedings of the 44th Annual Conference on African Linguistics*, 231-242. <a href="https://pages.ucsd.edu/~aritchart/Ritchart_Rose_2015_ACAL44.pdf">PDF</a>
 
@@ -1568,6 +1563,6 @@ Traill, A., Khumalo, J., & Fridjhon, P. (1987). Depressing facts about Zulu. *Af
 
 Utman, J., & Blumstein, S. (1994). The influence of language on the acoustic properties of phonetic features: A study of the feature [strident] in Ewe and English. *Phonetica*, 51(4), 221-238. <a href="https://doi.org/10.1159/000261978">Abstract</a>
 
-Whalen, D. H., DiCanio, C., & Dockum, R. (2020). Phonetic documentation in three collections: Topics and evolution. *Journal of the International Phonetic Association*, ##, 1-27. <a href="https://doi.org/10.1017/S0025100320000079">Abstract</a>
+Whalen, D. H., DiCanio, C., & Dockum, R. (2020). Phonetic documentation in three collections: Topics and evolution. *Journal of the International Phonetic Association*, 52(1), 1-27. <a href="https://doi.org/10.1017/S0025100320000079">Abstract</a>
 
 Zee, E. (1981). Effect of vowel quality on perception of post–vocalic nasal consonants in noise. *Journal of Phonetics*, 9(1), 35-48. <a href="https://doi.org/10.1016/S0095-4470(19)30925-8">Abstract</a>
