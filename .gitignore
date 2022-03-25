@@ -10,3 +10,4 @@
 .Trashes
 *.csv
 /assets/old_media
+.Rapp.*
