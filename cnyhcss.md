@@ -4,15 +4,16 @@
 
 ## Overview
 
-* Some background, and the phonetics-fieldwork connection
-* Acoustic recording best practices
-* How to get basic articulatory data
-* Conclusions
-
 The workshop these slides are drawn from was an introduction to **practical field** phonetics aimed at linguists trained in Cameroon
 
 * Universität Hamburg, 2022
 * University of Buea\* (Cameroon), 2022
+
+<img src="./assets/media/mtcam2.jpeg" width="600">
+
+* Some background, and the phonetics-fieldwork connection
+* Acoustic recording best practices
+* Basic articulatory data (yes, really)
 
 
 # Background
@@ -34,6 +35,8 @@ But there is little phonetics research on African languages <span class="cite">W
 
 
 ## Why take (really good) recordings?
+
+Documentation funders (surprisingly) often don't have clear guidelines for recording quality or equipment - why bother?
 
 Several practical advantages to investing time in good recordings, even if you do not plan to analyze the data yourself
 
@@ -175,17 +178,36 @@ Checking your recording quality with **headphones**: can detect unanticipated is
 <img src="./assets/media/soundproofing.jpeg" width="700">
 
 
-## The outcome
+## One outcome
 
 <audio id="nsunsu" src="./assets/media/nsunsu.wav"></audio>
 
 It is possible to get high-quality data in a relatively uncontrolled field setting! 
 
-The setup for <button onclick="document.getElementById('nsunsu').play()">this recording</button>
+The setup for <button onclick="document.getElementById('nsunsu').play()">this text recording</button>
 
-* Zoom H4 audio recorder (WAV, 22.1 khZ sampling)
+* Zoom H4 audio recorder (WAV, mono, 22.1 khZ sampling)
 * Shure SM10A hypercardioid headset microphone
 * A couple of mattresses against the wall facing the speaker
+* Separate room with closed door
+
+
+## A different outcome
+
+<audio id="fang" src="./assets/media/fang.wav"></audio>
+
+This <button onclick="document.getElementById('fang').play()">elicitation recording</button> of a nearby language was made to a somewhat less careful standard 
+
+* Zoom H1 recorder (WAV, stereo, 48 kHz sampling)
+	* I converted to mono
+* No external microphone (H1's internal omnidirectional mics used)
+* No sound treatment - echo, rather extensive background noise
+	* While it's not always *this* bad, this level of noise applies to a surprising portion of the materials
+* Recording possibly made in a common area or shared room
+
+Data of this quality is basically archivable at ELAR!
+
+* ELDP standards for recordings and recording equipment are *not publicly defined* and seem excessively flexible
 
 
 # Simple articulatory data
